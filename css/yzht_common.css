@@ -1,0 +1,706 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+    color: #666;
+}
+a:hover {
+    color: #f25618;
+}
+.content_wrap {
+    width: 100%;
+    height: auto;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+
+    content: "\0020";
+}
+
+/****业主后台 个人中心 左侧菜单********/
+.mc_menu_box {
+    float: left;
+    width: 162px;
+    height: auto;
+    margin-bottom: 40px;
+}
+.mcmb_title {
+    width: 160px;
+    height: 60px;
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 60px;
+
+    text-align: center;
+
+    border: 1px solid #eee;
+}
+.mcmb_title a {
+    color: #333;
+}
+.mcmb_title_on {
+    border-top: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+    border-left: 2px solid #01af63;
+    background-color: #f8f8f8;
+}
+.mcmb_title_on a {
+    color: #01af63;
+}
+.mcmb_menu {
+    width: 160px;
+    height: auto;
+
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.mcmb_menu a:hover {
+    color: #01af64;
+}
+.mcmb_menu  li {
+    line-height: 25px;
+
+    text-indent: 15px;
+}
+.parent_menu {
+    position: relative;
+
+    padding: 10px 0;
+
+    border-bottom: 1px dashed #eee;
+}
+.parent_menu a {
+    display: block;
+    height: 30px;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    color: #333;
+}
+.pm_icon_open {
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    margin-right: 7px;
+    overflow: hidden;
+
+    background-position: -77px -3px;
+
+    *vertical-align: middle;
+}
+.pm_icon_close {
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    margin-right: 7px;
+    overflow: hidden;
+
+    background-position: -61px -3px;
+
+    *vertical-align: middle;
+}
+.child_menu {
+    width: 100%;
+
+    font-size: 12px;
+}
+.child_menu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    font-size: 12px;
+
+    color: #666;
+}
+.child_menu li {
+    height: 30px;
+
+    line-height: 30px;
+
+    text-indent: 32px;
+
+    border-left: 2px solid #fff;
+}
+.child_menu_on {
+    border-left: 2px solid #01af69!important;
+    background: #f8f8f8;
+}
+.child_menu_on a {
+    position: relative;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: #01af69;
+}
+
+.icon_newtips {
+    display: inline-block;
+    width: 18px;
+    height: 11px;
+    padding-top: 6px;
+    margin-left: 5px;
+
+    background-position: -93px -2px;
+}
+.collect_count {
+    margin-left: 5px;
+
+    color: #ff4a4a;
+}
+
+.sprite_img1 {
+    overflow: hidden;
+
+    background-image: url(//img.to8to.com/to8to_img/yzht/yzht_global.png);
+}
+.content_wrap .global_pie {
+    border-bottom: none;
+}
+input,
+select {
+    color: #333;
+}
+
+/**** 弹窗 ****/
+.mod_pagetip_btn {
+    margin-top: 20px;
+}
+.mod_pagetip_btn .btn_yes {
+    width: 24px;
+    height: 36px;
+
+    line-height: 36px;
+}
+.mod_pagetip_btn .btn_cancel {
+    width: 24px;
+    height: 34px;
+
+    line-height: 34px;
+}
+.my_pagetip {
+    padding: 60px 0 40px;
+}
+.my_pagetip_btn {
+    margin-top: 10px;
+
+    text-align: center;
+}
+.my_pagetip .my_pagetip_btn .btn_yes {
+    display: inline-block;
+    float: none;
+    width: 24px;
+    height: 36px;
+    /* margin-right: 0; */
+    margin: 0 5px;
+
+    line-height: 36px;
+
+    *display: inline;
+    *zoom: 1;
+}
+.my_pagetip .my_pagetip_bd {
+    padding-right: 0;
+}
+.my_pagetip .my_pagetip_bd {
+    padding-top: 10px;
+}
+.my_pagetip .my_pagetip_title {
+    font-size: 14px;
+    max-width:282px;
+}
+.my_pagetip .my_pagetip_title span {
+    color: #f66;
+}
+.my_pagetip .my_pagetip_info {
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+.my_box_mobileverify .mod_form .form_hd {
+    margin-left: 60px;
+}
+.my_box_mobileverify .mod_form .form_hd li,
+.my_box_mobileverify .mod_form .form_hd li span,
+.my_box_mobileverify .mod_form .form_hd li p {
+    float: left;
+}
+.my_box_mobileverify .mod_form .form_hd li {
+    width: 410px;
+
+    line-height: 18px;
+
+    color: #333;
+}
+.my_box_mobileverify .mod_form .form_hd li span {
+    width: 20px;
+}
+.my_box_mobileverify .mod_form .form_hd li p {
+    width: 390px;
+}
+.my_box_mobileverify .mod_form .form_hd li em {
+    color: #999;
+}
+.my_box_mobileverify .mod_form .form_hd .form_hd_bcf8f8f8 {
+    width: 360px;
+    padding: 15px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #333;
+    background-color: #f8f8f8;
+}
+.my_box_mobileverify .mod_form .form_hd .form_hd_c333 {
+    width: 390px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #333;
+}
+.my_box_mobileverify .mod_form .form_hd .form_hd_c999 {
+    width: 390px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #999;
+}
+.zxgsbg_ico_calendar {
+    display: block;
+    overflow: hidden;
+
+    background: url(//img.to8to.com/to8to_img/zxgsbg/zxgsbg_global.png?v20150519) no-repeat;
+
+    _background: url(//img.to8to.com/to8to_img/zxgsbg/zxgsbg_global.gif?v20150519) no-repeat;
+}
+.zxgsbg_ico_calendar {
+    width: 16px;
+    height: 16px;
+
+    background-position: -25px 0;
+}
+.company_base {
+    padding-bottom: 20px;
+}
+.element .submit {
+    display: inline-block;
+    width: 68px;
+    height: 34px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    line-height: 34px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff;
+    border: 0;
+    background: #f36f20;
+
+    *display: inline;
+    *zoom: 1;
+}
+.element .submit:hover {
+    background: #e7691e;
+}
+.company_base .company_prompt {
+    width: 410px;
+    padding: 10px;
+    margin: 30px auto 0;
+
+    line-height: 18px;
+
+    color: #999;
+    background-color: #f8f8f8;
+}
+.company_base .companyinfo_box {
+    margin-top: 40px;
+}
+.company_base .companyinfo_box li {
+    float: left;
+    width: 100%;
+
+    _background-image: url(about:blank);
+}
+.company_base .companyinfo_box .companyinfo_box_t {
+    float: left;
+    width: 118px;
+    height: 34px;
+    margin-right: 10px;
+
+    line-height: 34px;
+
+    text-align: right;
+
+    *display: inline;
+}
+.company_base .companyinfo_box .element {
+    position: relative;
+
+    display: inline;
+    float: left;
+    width: 230px;
+    padding-bottom: 10px;
+
+    line-height: 34px;
+}
+.company_base .companyinfo_box .height_auto {
+    padding-bottom: 0;
+}
+.company_base .companyinfo_box .element .form_error {
+    line-height: 14px;
+
+    color: #f66;
+}
+.company_base .companyinfo_box .unit {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.company_base .companyinfo_box .element .text_date {
+    position: relative;
+
+    display: inline-block;
+    width: 110px;
+
+    vertical-align: top;
+
+    *display: inline;
+    *zoom: 1;
+}
+.company_base .companyinfo_box .element_b {
+    width: 400px;
+}
+.company_base .companyinfo_box .element_b .text_date {
+    width: 150px;
+}
+.company_base .companyinfo_box .element .text_date input {
+    width: 88px;
+}
+.company_base .companyinfo_box .element_b .text_date input {
+    width: 128px;
+}
+.company_base .companyinfo_box .zxgsbg_ico_calendar {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+.company_base .companyinfo_box .text {
+    width: 208px;
+    height: 16px;
+    padding: 8px 10px 10px;
+
+    border: 1px solid #ddd;
+}
+.company_base .companyinfo_box .element_s .text {
+    width: 128px;
+}
+.company_base .companyinfo_box .checkbox {
+    margin-top: -2px;
+
+    vertical-align: middle;
+
+    *height: 14px;
+    *margin-top: 0;
+    *width: 14px;
+}
+.company_base .companyinfo_box .select {
+    width: 230px;
+    height: 34px;
+    padding-left: 6px;
+
+    color: #333;
+    border: 1px solid #ddd;
+}
+.company_base .companyinfo_box .element_s .select {
+    width: 130px;
+}
+.ielt9 .company_base .companyinfo_box .select {
+    padding: 8px;
+}
+.ielt8 .company_base .companyinfo_box .select {
+    height: 24px;
+    margin-top: 5px;
+}
+.company_base .companyinfo_box .element em {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+
+    line-height: 20px;
+
+    color: #bbb;
+}
+.company_base .companyinfo_box .element_radio input {
+    margin-top: -3px;
+
+    vertical-align: middle;
+
+    _margin-top: 0;
+}
+.company_base .companyinfo_box .upload_pic_box dd {
+    position: relative;
+
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+}
+.ielt7 .company_base .companyinfo_box .upload_pic_box dd {
+    display: inline;
+}
+.company_base .companyinfo_box .upload_pic_box img {
+    width: 100px;
+    height: 100px;
+}
+.company_base .companyinfo_box .upload_pic_box .upload_pic {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+
+    width: 100px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #666;
+}
+.company_base .companyinfo_box .upload_pic_box object {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+}
+.company_base .companyinfo_box .upload_pic_box .uploat_file {
+    display: none;
+}
+.uploadify-queue {
+    display: none;
+}
+.company_base .companyinfo_box .upload_pic_box .uploadify {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#upload_result_1 {
+    left: 0;
+}
+#upload_result_2 {
+    left: 0;
+}
+#upload_result_3 {
+    left: 0;
+}
+.company_base .coocompany_list {
+    width: 440px;
+    margin: 40px auto 10px;
+
+    border-bottom: 1px dotted #e6e6e6;
+
+    *padding-bottom: 25px;
+}
+.company_base .coocompany_list li {
+    float: left;
+    width: 214px;
+    margin-bottom: 25px;
+
+    color: #333;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.company_base .coocompany_list .coocompany_list_no {
+    color: #999;
+}
+.company_base .coocompany_list input {
+    margin-top: -3px;
+
+    vertical-align: middle;
+
+    *margin-top: 0;
+}
+.my_estimate_tips {
+    width: 550px;
+    margin: 40px auto;
+}
+.my_estimate_tips_text {
+    line-height: 18px;
+
+    color: #333;
+}
+.my_estimate_tips_level {
+    margin: 20px 0 10px;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+.my_estimate_tips_level input,
+.my_estimate_tips_recommend input {
+    margin-top: -3px;
+
+    vertical-align: middle;
+
+    *margin-top: 0;
+}
+
+.my_estimate_tips_star dt {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #333;
+
+    *display: inline;
+    *zoom: 1;
+}
+.my_estimate_tips_textarea {
+    position: relative;
+
+    height: 152px;
+    margin-top: 15px;
+
+    line-height: 18px;
+}
+
+.my_estimate_tips_textarea textarea {
+    width: 528px;
+    height: 112px;
+    padding: 10px;
+    color: #333;
+    border: 1px solid #d8d8d8;
+}
+
+.my_estimate_tips_textarea span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 530px;
+
+    color: #bbb;
+}
+.my_estimate_tips_textarea em {
+    position: absolute;
+    top: 92px;
+    right: 0;
+
+    line-height: 18px;
+
+    text-align: right;
+
+    color: #666;
+}
+.my_estimate_tips .mod_pagetip_btn .btn_yes {
+    width: 64px;
+    padding: 0;
+    margin-right: 0;
+}
+.my_estimate_tips .mod_pagetip_btn {
+    margin-top: 0;
+}
+.my_estimate_tips_recommend {
+    font-size: 14px;
+}
+/* 头部 */
+.narrow_980 .header {
+    height: 162px;
+}
+.narrow_980 .header_center {
+    height: 125px;
+
+    border-bottom: 2px solid #01af63;
+}
+.narrow_980 .header_center_container span.hcc_logo {
+    margin: 30px 20px 0 0;
+}
+.narrow_980 .header_center_container span.hcc_title {
+    height: 44px;
+    padding-left: 20px;
+    margin-top: 47px;
+
+    font-size: 18px;
+    line-height: 44px;
+
+    color: #333;
+    border-left: 1px solid #eee;
+}
+
+.main_content_box {
+    width: 980px;
+    margin: 0 auto;
+    clear: both;
+}
+.main_container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+/*2017年5月26日 评价弹框新样式 start*/
+.my_estimate_tips_com{
+    float: left;padding-top: 10px;padding-left:10px;
+}
+.evaluation-Form .my_estimate_tips_star{
+    padding-left:10px;
+}
+.evaluation-Form .my_estimate_tips_star dt ,.evaluation-Form .my_estimate_tips_com dt{
+    display: inline-block;
+    text-align:right;
+    font-size: 12px;
+    line-height: 24px;
+    width:90px;
+    color: #333;
+    *display: inline;
+    *zoom: 1;
+    padding-right:2px;
+}
+.evaluation-Form .my_estimate_tips_star .comment_text{
+    color: #999;
+    width:auto;
+}
+
+.evaluation-Form .my_estimate_tips_star dl .chose{
+    padding: 0 1px;
+}
+.evaluation-Form .my_estimate_tips_star div{
+    margin:10px 0;
+}
+.evaluation-Form .my_estimate_tips_textarea{
+    margin-top: 0px;
+}
+.evaluation-Form .my_estimate_tips_textarea textarea{
+    width: 410px;
+    height: 116px;
+}
+.evaluation-Form .submit{
+    margin-left: 103px;
+}
+/*评价弹框新样式 end*/
+.suggest_t8t::-webkit-input-placeholder,
+.evaluation_txtare::-webkit-input-placeholder {
+    color: #999;
+    font-size: 12px;
+}
+.service-bar{
+    display: none;
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!-- 用户中心 -->
+<html lang="en" class=" en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ChanYeol室内装修网站</title>
+    <link rel="icon" href="img/logo.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" charset="utf-8">
+    <!--尾部-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" charset="utf-8">
+    <!--通用-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" charset="utf-8">
+    <!--import引入-->
+    <link rel="import" href="header.html" id="header"/>
+    <link rel="import" href="footer.html" id="footer"/>
+
+    <link rel="stylesheet" type="text/css" href="css/yzht_common.css">
+    <link rel="stylesheet" type="text/css" href="css/yzht_index.css">
+
+</head>
+<body class="" style="padding-top: 105px">
+
+<div class="global_wrap" id="gloWrap">
+    <!--头部-->
+    <script type="text/javascript">
+        document.write(header.import.body.innerHTML);
+    </script>
+
+    <div class="content_wrap">
+        <div class="main_content_box">
+            <div class="main_container">
+                <!--左侧列表-->
+                <div class="mc_menu_box" >
+                    <h2 class="mcmb_title child_menu_on"><a href="http://www.to8to.com/my">个人中心首页</a></h2>
+                    <ul class="mcmb_menu">
+                        <li class="parent_menu" data_status="show"><a href="javascript:void(0)"><i
+                                class="pm_icon_open sprite_img1"></i>我的装修</a>
+                            <ul class="child_menu">
+                                <li><a href="http://www.to8to.com/my/yezhu_design_scheme.php">正在装修</a></li>
+                                <li><a href="http://www.to8to.com/my/yz_zb_comments.php">装修完成</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent_menu" data_status="show"><a href="javascript:void(0)"><i
+                                class="pm_icon_open sprite_img1"></i>我的装修日记</a>
+                            <ul class="child_menu">
+                                <li><a href="http://www.to8to.com/my/my_scene_diary.php">我的装修日记</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent_menu" data_status="show"><a href="javascript:void(0)"><i
+                                class="pm_icon_open sprite_img1"></i>我的评论</a>
+                            <ul class="child_menu">
+                                <li><a href="http://www.to8to.com/my/my_scene_diary.php">装修日记</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent_menu" data_status="show"><a href="javascript:void(0)"><i
+                                class="pm_icon_open sprite_img1"></i>我的收藏</a>
+                            <ul class="child_menu">
+                                <li><a href="http://www.to8to.com/my/xgt_collection.php">装修案例
+                                    <span class="collect_count">0</span></a></li>
+                                <li><a href="http://www.to8to.com/my/scene_diary_collection.php">装修日记
+                                    <span class="collect_count">0</span></a></li>
+                                <li><a href="http://www.to8to.com/my/zwj_collection.php">热装小区
+                                    <span class="collect_count">0</span></a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="parent_menu" data_status="show"><a href="javascript:void(0)"><i
+                                 class="pm_icon_open sprite_img1"></i>我的个人资料</a>
+                             <ul class="child_menu dn" style="display: block;">
+                                 <li class="child_menu_on"><a href="http://www.to8to.com/my/yz_administration_self.php">
+                                     个人资料</a></li>
+                             </ul>
+                         </li>-->
+                    </ul>
+                </div>
+                <!--右边内容-->
+                <!--个人首页-->
+                <div class="mc_rightsidebar_box">
+                    <div class="mcrb_userinfo">
+                        <div style="padding:20px" class="clear">
+                            <div class="mcrbu_left fl">
+                                <div class="mcrbu_avatar">
+                                    <a href="http://www.to8to.com/my/yz_administration_self.php">
+                                        <img src="img/4_1x.jpg"></a>
+                                    <span id="upload_pic" class="update_head">
+                                        <a href="http://www.to8to.com/my/yz_administration_self.php">修改资料</a>
+                                    </span>
+                                    <span class="border_radius"></span>
+                                </div>
+                                <div class="mcrbu_detailinfo">
+                                    <p><span class="mcrub_username color_333" title="204984">204984</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <div class="clumn_name">
+                            <p>我的个人资料</p>
+                        </div>
+                        <div class="msg_percent">
+                            <label>个人资料完整度:</label>
+                            <div class="percent">
+                                <div class="percent_inside" style="width:110px">50%</div>
+                            </div>
+                            <label>完善邮箱+20%，完善城市+10%</label>
+                        </div>
+                        <form method="post" action="http://www.to8to.com/my/yz_administration_self.php"
+                              onsubmit="return checkform1(this)" enctype="multipart/form-data" id="fm">
+                            <div class="personal_info">
+                                <div>
+                                    <label>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</label>
+                                    <input type="text" name="nick" value="204984">
+                                    <div class="message"></div>
+                                </div>
+                                <div>
+                                    <label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+                                    <input type="radio" name="sex" value="1">&nbsp;&nbsp;男
+                                    <input type="radio" name="sex" value="0" checked="checked">&nbsp;&nbsp;女
+                                    <div class="message"></div>
+                                </div>
+                                <div>
+                                    <label>邮箱：</label>
+                                    <input type="text" value="" name="email">
+                                    <div class="message"></div>
+                                </div>
+                                <div class="stats">
+                                    <label>注册状态：</label>
+                                    <select name="oid" id="oid">
+                                        <option value="1">还没买房</option>
+                                        <option value="2">已买房，未拿到钥匙</option>
+                                        <option value="3">准备装修</option>
+                                        <option value="4">正在装修中</option>
+                                        <option value="5">已经装修了</option>
+                                    </select>
+                                </div>
+                                <div class="city"><label>所在城市：</label>
+                                    <select id="User_Shen" style="width:78px;margin-right:5px;vertical-align:middle;"
+                                            name="User_Shen"
+                                            onchange="changeProvince(&#39;User_Shen&#39;,&#39;User_City&#39;,&#39;User_Town&#39;);">
+                                        <option value="">省/市</option>
+                                        <option value="安徽">A 安徽</option>
+                                        <option value="北京">B 北京</option>
+                                        <option value="重庆">C 重庆</option>
+                                        <option value="福建">F 福建</option>
+                                        <option value="广西">G 广西</option>
+                                        <option value="贵州">G 贵州</option>
+                                        <option value="广东">G 广东</option>
+                                        <option value="甘肃">G 甘肃</option>
+                                        <option value="海南">H 海南</option>
+                                        <option value="湖北">H 湖北</option>
+                                        <option value="黑龙江">H 黑龙江</option>
+                                        <option value="河南">H 河南</option>
+                                        <option value="河北">H 河北</option>
+                                        <option value="湖南">H 湖南</option>
+                                        <option value="江苏">J 江苏</option>
+                                        <option value="吉林">J 吉林</option>
+                                        <option value="江西">J 江西</option>
+                                        <option value="辽宁">L 辽宁</option>
+                                        <option value="内蒙古">N 内蒙古</option>
+                                        <option value="宁夏">N 宁夏</option>
+                                        <option value="澳门">O 澳门</option>
+                                        <option value="青海">Q 青海</option>
+                                        <option value="四川">S 四川</option>
+                                        <option value="陕西">S 陕西</option>
+                                        <option value="上海">S 上海</option>
+                                        <option value="山东">S 山东</option>
+                                        <option value="山西">S 山西</option>
+                                        <option value="台湾">T 台湾</option>
+                                        <option value="天津">T 天津</option>
+                                        <option value="西藏">X 西藏</option>
+                                        <option value="香港">X 香港</option>
+                                        <option value="新疆">X 新疆</option>
+                                        <option value="云南">Y 云南</option>
+                                        <option value="浙江">Z 浙江</option>
+                                    </select>
+                                    <select id="User_City" style="width:78px;margin-right:5px;vertical-align:middle;"
+                                            name="User_City"
+                                            onchange="changeTown(&#39;User_Shen&#39;,&#39;User_City&#39;,&#39;User_Town&#39;);">
+                                        <option value="">市/地区</option>
+                                    </select>
+                                    <select id="User_Town" style="width:108px;margin-right:5px;vertical-align:middle;"
+                                            name="User_Town">
+                                        <option value="">县/市</option>
+                                    </select>
+                                    <div class="addr_info">
+                                        <input class="user_input_address" id="building" type="text" name="address"
+                                               value="请输入详细地址" maxlength="15" width="120"
+                                               onfocus="make_tip(this,&#39;focus&#39;);"
+                                               onblur="make_tip(this,&#39;blur&#39;)">
+                                        <ul class="address_list" id="address_list">
+                                        </ul>
+                                        <div class="message"></div>
+                                    </div>
+                                </div>
+                                <div class="this_head" id="this_head" style="min-height: 50px;">
+                                    <label>当前头像：</label>
+                                    <img src="img/4_1x.jpg" id="p_view_img_1" width="75" height="75"></div>
+                                <div class="photo_content">
+                                    <div class="upload_pic clearfix">
+                                        <div id="altContent"></div>
+                                        <div id="avatar_priview"></div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="subInfo" value="1">
+                                <div class="btn" style="float: left;margin-left: 70px;*margin-left: 20px;">
+                                    <input type="submit" value="提交">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--我的装修-->
+                <div class="right_content" style="display:none;">
+                    <div class="clumn_name">
+                        <p>正在装修中</p>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>杨晓慧</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        温馨美好</a>
+                                </h3>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <!--位置-->
+                                <i>好宜家温馨苑</i>
+                                <!--大小-->
+                                <i>78㎡</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>杨晓慧</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        温馨美好</a>
+                                </h3>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <!--位置-->
+                                <i>好宜家温馨苑</i>
+                                <!--大小-->
+                                <i>78㎡</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page_content">
+                    </div>
+                </div>
+                <div class="right_content" style="display:none;">
+                    <div class="clumn_name">
+                        <p>已完成装修</p>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>杨晓慧</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        温馨美好</a>
+                                </h3>
+                                <ul class="ddh_comment">
+                                    <li><span class="sprite_img1 icon_view"></span>235381</li>
+                                    <li><span class="sprite_img1 icon_star"></span>209</li>
+                                </ul>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <!--位置-->
+                                <i>好宜家温馨苑</i>
+                                <!--大小-->
+                                <i>78㎡</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>杨晓慧</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        温馨美好</a>
+                                </h3>
+                                <ul class="ddh_comment">
+                                    <li><span class="sprite_img1 icon_view"></span>235381</li>
+                                    <li><span class="sprite_img1 icon_star"></span>209</li>
+                                </ul>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <!--位置-->
+                                <i>好宜家温馨苑</i>
+                                <!--大小-->
+                                <i>78㎡</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page_content">
+                    </div>
+                </div>
+                <!--我的装修日记-->
+                <div class="right_content" style="display:none;">
+                    <div class="clumn_name">
+                        <p>我的装修日记</p>
+                    </div>
+                    <div class="decorate_diary_list">
+                        <div class="diary_list">
+                            <div class="diary_title">
+                                <p class="diary_title_left"><a target="_blank"
+                                                               href="http://www.to8to.com/riji/scenedetail.php?id=5172916&amp;view=1">灿烈的小房间</a>
+                                </p>
+                                <div class="diary_title_right">
+                                    <ul>
+                                        <li><span class="icon_01"></span>0</li>
+                                        <li><span class="icon_02"></span>0</li>
+                                        <li><span class="icon_03"></span>0</li>
+                                    </ul>
+                                </div>
+                                <div class="time">
+                                    <p>创建时间：2018-11-02</p>
+                                    <p>更新时间：</p>
+                                </div>
+                            </div>
+                            <div class="diary_detail">
+                                <div class="msg_top"><span>房屋信息：</span><em class="border_right">60㎡</em><em
+                                        class="border_right">
+                                    简约&nbsp;&nbsp;
+                                </em><em>
+                                    半包 </em><a href="javascript:;" class="btn_edit"
+                                               onclick="javascript:modifyInfo(&#39;2&#39;,&#39;5172916&#39;);">编辑</a>
+                                </div>
+                                <p>所在小区：东莞市
+                                    恒大江湾 </p>
+                                <p>装修公司：
+                                    还在选择中 </p>
+                            </div>
+                            <div class="diary_btn">
+                                <ul>
+                                    <li><span>全部日记：0篇</span>
+                                        <div class="btn">
+                                            <input type="button" value="续写日记"
+                                                   onclick="window.open(&#39;/riji/editscenediary.php?sid=5172916&#39;)">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" create_diary">
+                            <a target="_blank" href="http://www.to8to.com/riji/?my=1&amp;write_diary_from_yz">
+                                +新建装修日记</a>
+                        </div>
+                        <div class="page_content">
+                        </div>
+                    </div>
+                </div>
+                <!--装修日记评论-->
+                <div class="right_content"  style="display:none;">
+                    <div class="clumn_name">
+                        <p>装修日记评论</p>
+                        <div class="control_btn">
+                            <span><input type="checkbox" class="check_all"><label>全选</label></span>
+                            <span><em></em><label id="favdelbottom">删除</label></span>
+                        </div>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <input type="checkbox" class="btn_check" id="4470562" name="id[]">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>罗皓元___</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        115平第一套房，希望风格不要跑偏</a>
+                                </h3>
+                                <span class="ddh_count">[10]篇</span>
+                                <ul class="ddh_comment">
+                                    <li><span class="sprite_img1 icon_view"></span>235381</li>
+                                    <li><span class="sprite_img1 icon_star"></span>209</li>
+                                    <li class="border_none"><span class="sprite_img1 icon_message"></span>77</li>
+                                </ul>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <i>长沙市</i>
+                                <i>115㎡</i>
+                                <i>准备装修</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p><a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1" rel="nofollow">
+                                放一波细节照吧，开箱的时候，我家团子好奇的扑过来看，可能被这庞然大物吓着了吧，也是第一见这么大的落地加湿器。整个造型还是挺符合家居风的，主打的落地设计也确实挺好...[更多]</a>
+                            </p>
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                            <p class="response_tips">1分钟前发布</p>
+                        </div>
+                    </div>
+                    <div class="page_content">
+                    </div>
+                </div>
+                <!--装修案例收藏-->
+                <div class="right_content" style="display:none;">
+                    <div class="clumn_name">
+                        <p>装修案例收藏</p>
+                        <div class="control_btn">
+                            <span><input type="checkbox" class="check_all"><label>全选</label></span>
+                            <span><em></em><label id="favdelbottom">删除</label></span>
+                        </div>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <input type="checkbox" class="btn_check" id="4470562" name="id[]">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>杨晓慧</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        温馨美好</a>
+                                </h3>
+                                <ul class="ddh_comment">
+                                    <li><span class="sprite_img1 icon_view"></span>235381</li>
+                                    <li><span class="sprite_img1 icon_star"></span>209</li>
+                                </ul>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <!--位置-->
+                                <i>好宜家温馨苑</i>
+                                <!--大小-->
+                                <i>78㎡</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page_content">
+                    </div>
+                </div>
+                <!--装修日记收藏-->
+                <div class="right_content" style="display:none;">
+                    <div class="clumn_name">
+                        <p>装修日记收藏</p>
+                        <div class="control_btn">
+                            <span><input type="checkbox" class="check_all"><label>全选</label></span>
+                            <span><em></em><label id="favdelbottom">删除</label></span>
+                        </div>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <input type="checkbox" class="btn_check" id="4470562" name="id[]">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>罗皓元___</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        115平第一套房，希望风格不要跑偏</a>
+                                </h3>
+                                <span class="ddh_count">[10]篇</span>
+                                <ul class="ddh_comment">
+                                    <li><span class="sprite_img1 icon_view"></span>235381</li>
+                                    <li><span class="sprite_img1 icon_star"></span>209</li>
+                                    <li class="border_none"><span class="sprite_img1 icon_message"></span>77</li>
+                                </ul>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <i>长沙市</i>
+                                <i>115㎡</i>
+                                <i>准备装修</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p><a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1" rel="nofollow">
+                                放一波细节照吧，开箱的时候，我家团子好奇的扑过来看，可能被这庞然大物吓着了吧，也是第一见这么大的落地加湿器。整个造型还是挺符合家居风的，主打的落地设计也确实挺好...[更多]</a>
+                            </p>
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                            <p class="response_tips">1分钟前发布</p>
+                        </div>
+                    </div>
+                    <div class="page_content">
+                    </div>
+                </div>
+                <!--热装小区收藏-->
+                <div class="right_content" style="display:none;">
+                    <div class="clumn_name">
+                        <p>热装小区收藏</p>
+                        <div class="control_btn">
+                            <span><input type="checkbox" class="check_all"><label>全选</label></span>
+                            <span><em></em><label id="favdelbottom">删除</label></span>
+                        </div>
+                    </div>
+                    <div class="dn_content diary_content">
+                        <input type="checkbox" class="btn_check" id="4470562" name="id[]">
+                        <div class="dd_userinfo">
+                            <img src="img/headphoto_7929405_120.jpg">
+                            <p>宝安 勤诚达22世纪</p>
+                        </div>
+                        <div class="dd_header">
+                            <div class="ddh_otherinfo">
+                                <h3 class="ddh_title">
+                                    <a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1">
+                                        宝安 勤诚达22世纪</a>
+                                </h3>
+                                <ul class="ddh_comment">
+                                    <li><span class="sprite_img1 icon_view"></span>235381</li>
+                                    <li><span class="sprite_img1 icon_star"></span>209</li>
+                                </ul>
+                            </div>
+                            <div class="ddh_decoration_info">
+                                <!--位置-->
+                                <i>宝安创业路灵芝公园旁</i>
+                                <!--房价-->
+                                <i>26000元</i>
+                            </div>
+                        </div>
+                        <div class="dd_article">
+                            <p><a target="_blank" href="http://www.to8to.com/riji/scenedetail.php?id=4470562&amp;view=1" rel="nofollow">
+                                勤诚达22世纪位于深圳市宝安22区，属双地铁物业（深圳5、10号双地铁都市综合体物业）；勤诚达22世纪项目周边商场较 ...[更多]</a>
+                            </p>
+                            <p class="dda_photo">
+                                <img src="img/20171023_9fe2ea5daab158ff6d14tjrz4cef7kb3.jpeg">
+                                <img src="img/20171023_d1ca4f8bfb4b7891352bgr3rutka23hn.jpeg">
+                                <img src="img/20171023_7365d66ddba5e44bbca4mhhy50eyr67i.jpeg">
+                                <img src="img/20171023_ec69a965ddb722887792581emfzovaq1.jpeg">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page_content">
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--尾部-->
+        <script type="text/javascript">
+            document.write(footer.import.body.innerHTML);
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

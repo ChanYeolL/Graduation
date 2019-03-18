@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--注册-->
+<html style="overflow-y: scroll;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ChanYeol室内装修网站</title>
+    <link rel="icon" href="img/logo.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" charset="utf-8">
+    <!--尾部-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" charset="utf-8">
+    <!--通用-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--import引入-->
+    <link rel="import" href="header.html" id="header"/>
+    <link rel="import" href="footer.html" id="footer"/>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style="padding-top: 105px">
+<div class="global-wrap">
+    <script type="text/javascript">
+        document.write(header.import.body.innerHTML);
+    </script>
+
+    <div class="main-container body-background">
+        <div class="container">
+            <div class=" register_main">
+                <form id="formRegister" action="#" class="form-login animate-box fadeInLeft
+                animated-fast">
+                    <h3 class="text-center">注 &nbsp;&nbsp; 册</h3>
+                    <div class="form-group">
+                        <label for="username" class="sr-only">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="用户名"
+                               autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="密码
+                            " autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="repassword" class="sr-only">Repassword</label>
+                        <input type="password" class="form-control" id="repassword"
+                               placeholder="确认密码"
+                               autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Phone</label>
+                        <input type="password" class="form-control" id="email" placeholder="电话号码"
+                               autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <p class="change">已经注册过？<a href="user_login.html">登录</a></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary center-block" value="注
+                        &nbsp;&nbsp;册">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.write(footer.import.body.innerHTML);
+    </script>
+</div>
+
+</body>
+</html>

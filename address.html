@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- 切换地址 -->
+<html lang="en" class=" en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ChanYeol室内装修网站</title>
+    <link rel="icon" href="img/logo.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" charset="utf-8">
+    <!--尾部-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" charset="utf-8">
+    <!--通用-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" charset="utf-8">
+    <!--import引入-->
+    <link rel="import" href="header.html" id="header"/>
+    <link rel="import" href="footer.html" id="footer"/>
+
+    <link href="css/address.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="narrow_980" style="padding-top: 105px">
+<div class="global_wrap" id="gloWrap">
+    <!--头部-->
+    <script type="text/javascript">
+        document.write(header.import.body.innerHTML);
+    </script>
+
+    <!--主体-->
+    <div class="choose_city">
+        <div class="rmcs" id="Div1">
+            <div class="title_type1">热门城市</div>
+            <div class="xzcs_dt">
+                <span><a target="_blank" href="http://bj.to8to.com/" title="北京装修网">北京</a></span> <span><a
+                    target="_blank" href="http://sh.to8to.com/" title="上海装修网">上海</a></span> <span><a target="_blank"
+                                                                                                     href="http://gz.to8to.com/"
+                                                                                                     title="广州装修网">广州</a></span>
+                <span><a target="_blank" href="http://sz.to8to.com/" title="深圳装修网">深圳</a></span> <span><a
+                    target="_blank" href="http://nj.to8to.com/" title="南京装修网">南京</a></span> <span><a target="_blank"
+                                                                                                     href="http://suzhou.to8to.com/"
+                                                                                                     title="苏州装修网">苏州</a></span>
+                <span><a target="_blank" href="http://hz.to8to.com/" title="杭州装修网">杭州</a></span>
+                <div class="rm_gkt">共开通了<i>307</i>个城市站</div>
+            </div>
+        </div>
+        <div class="rm_cz">
+            <strong class="title_type1">快速查找</strong>
+            <select name="shen" id="shen" onchange="changeShen(this,&#39;city&#39;)">
+                <option value="14">A 安徽</option>
+                <option value="0">B 北京</option>
+                <option value="7">C 重庆</option>
+                <option value="17">F 福建</option>
+                <option value="27">G 甘肃</option>
+                <option value="2">G 广东</option>
+                <option value="21">G 广西</option>
+                <option value="24">G 贵州</option>
+                <option value="18">H 海南</option>
+                <option value="5">H 河南</option>
+                <option value="13">H 河北</option>
+                <option value="16">H 湖南</option>
+                <option value="9">H 湖北</option>
+                <option value="20">H 黑龙江</option>
+                <option value="6">J 江苏</option>
+                <option value="19">J 江西</option>
+                <option value="22">J 吉林</option>
+                <option value="15">L 辽宁</option>
+                <option value="25">N 内蒙古</option>
+                <option value="28">N 宁夏</option>
+                <option value="29">Q 青海</option>
+                <option value="1">S 上海</option>
+                <option value="8">S 陕西</option>
+                <option value="10">S 四川</option>
+                <option value="12">S 山东</option>
+                <option value="23">S 山西</option>
+                <option value="3">T 天津</option>
+                <option value="26">X 新疆</option>
+                <option value="30">X 西藏</option>
+                <option value="11">Y 云南</option>
+                <option value="4">Z 浙江</option>
+            </select>
+            <select onchange="changeCity()" id="city" name="city">
+                <option value="0">合肥</option>
+                <option value="1">芜湖</option>
+                <option value="2">宿州</option>
+                <option value="3">黄山</option>
+                <option value="4">滁州</option>
+                <option value="5">淮南</option>
+                <option value="6">安庆</option>
+                <option value="7">阜阳</option>
+                <option value="8">六安</option>
+                <option value="9">蚌埠</option>
+                <option value="10">马鞍山</option>
+                <option value="11">亳州</option>
+                <option value="12">淮北</option>
+                <option value="13">宣城</option>
+                <option value="14">铜陵</option>
+                <option value="15">池州</option>
+            </select>
+            <input type="submit" class="smt" value="进入" onclick="goto_index_fz()">
+        </div>
+        <div class="letter_search">
+            <strong class="title_type2">按拼音首字母选择</strong>
+            <div class="letter_list" id="letter_list">
+                <a href="javascript:;">A</a>
+                <a href="javascript:;">B</a>
+                <a href="javascript:;">C</a>
+                <a href="javascript:;">D</a>
+                <a href="javascript:;">E</a>
+                <a href="javascript:;">F</a>
+                <a href="javascript:;">G</a>
+                <a href="javascript:;">H</a>
+                <a href="javascript:;">J</a>
+                <a href="javascript:;">K</a>
+                <a href="javascript:;">L</a>
+                <a href="javascript:;">M</a>
+                <a href="javascript:;">N</a>
+                <a href="javascript:;">O</a>
+                <a href="javascript:;">P</a>
+                <a href="javascript:;">Q</a>
+                <a href="javascript:;">R</a>
+                <a href="javascript:;">S</a>
+                <a href="javascript:;">T</a>
+                <a href="javascript:;">W</a>
+                <a href="javascript:;">X</a>
+                <a href="javascript:;">Y</a>
+                <a href="javascript:;">Z</a>
+            </div>
+        </div>
+        <div id="city_box">
+            <div class="cs_zs">
+                <div class="title_type2">华北地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://bj.to8to.com/" title="北京装修网">北京</a><a
+                        target="_blank" href="http://tj.to8to.com/" title="天津装修网">天津</a><a target="_blank"
+                                                                                           href="http://sjz.to8to.com/"
+                                                                                           title="石家庄装修网">石家庄</a><a
+                        target="_blank" href="http://ts.to8to.com/" title="唐山装修网">唐山</a><a target="_blank"
+                                                                                           href="http://lf.to8to.com/"
+                                                                                           title="廊坊装修网">廊坊</a><a
+                        target="_blank" href="http://baoding.to8to.com/" title="保定装修网">保定</a><a target="_blank"
+                                                                                                href="http://zhangjiakou.to8to.com/"
+                                                                                                title="张家口装修网">张家口</a><a
+                        target="_blank" href="http://handan.to8to.com/" title="邯郸装修网">邯郸</a><a target="_blank"
+                                                                                               href="http://cangzhou.to8to.com/"
+                                                                                               title="沧州装修网">沧州</a><a
+                        target="_blank" href="http://xingtai.to8to.com/" title="邢台装修网">邢台</a><a target="_blank"
+                                                                                                href="http://wlcb.to8to.com/"
+                                                                                                title="乌兰察布装修网">乌兰察布</a><a
+                        target="_blank" href="http://xilinguolemeng.to8to.com/" title="锡林郭勒盟装修网">锡林郭勒盟</a><a
+                        target="_blank" href="http://hhht.to8to.com/" title="呼和浩特装修网">呼和浩特</a><a target="_blank"
+                                                                                                 href="http://baotou.to8to.com/"
+                                                                                                 title="包头装修网">包头</a><a
+                        target="_blank" href="http://yuncheng.to8to.com/" title="运城装修网">运城</a><a target="_blank"
+                                                                                                 href="http://changzhi.to8to.com/"
+                                                                                                 title="长治装修网">长治</a><a
+                        target="_blank" href="http://chifeng.to8to.com/" title="赤峰装修网">赤峰</a><a target="_blank"
+                                                                                                href="http://eerduosi.to8to.com/"
+                                                                                                title="鄂尔多斯装修网">鄂尔多斯</a><a
+                        target="_blank" href="http://hulunbeiershi.to8to.com/" title="呼伦贝尔装修网">呼伦贝尔</a></div>
+            </div>
+            <div class="cs_zs">
+                <div class="title_type2">华东地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://sh.to8to.com/" title="上海装修网">上海</a><a
+                        target="_blank" href="http://nj.to8to.com/" title="南京装修网">南京</a><a target="_blank"
+                                                                                           href="http://hz.to8to.com/"
+                                                                                           title="杭州装修网">杭州</a><a
+                        target="_blank" href="http://fz.to8to.com/" title="福州装修网">福州</a><a target="_blank"
+                                                                                           href="http://suzhou.to8to.com/"
+                                                                                           title="苏州装修网">苏州</a><a
+                        target="_blank" href="http://changshu.to8to.com/" title="常熟装修网">常熟</a><a target="_blank"
+                                                                                                 href="http://jn.to8to.com/"
+                                                                                                 title="济南装修网">济南</a><a
+                        target="_blank" href="http://wx.to8to.com/" title="无锡装修网">无锡</a><a target="_blank"
+                                                                                           href="http://qd.to8to.com/"
+                                                                                           title="青岛装修网">青岛</a><a
+                        target="_blank" href="http://nb.to8to.com/" title="宁波装修网">宁波</a><a target="_blank"
+                                                                                           href="http://wz.to8to.com/"
+                                                                                           title="温州装修网">温州</a><a
+                        target="_blank" href="http://yw.to8to.com/" title="义乌装修网">义乌</a><a target="_blank"
+                                                                                           href="http://wf.to8to.com/"
+                                                                                           title="潍坊装修网">潍坊</a><a
+                        target="_blank" href="http://jining.to8to.com/" title="济宁装修网">济宁</a><a target="_blank"
+                                                                                               href="http://yt.to8to.com/"
+                                                                                               title="烟台装修网">烟台</a><a
+                        target="_blank" href="http://nt.to8to.com/" title="南通装修网">南通</a><a target="_blank"
+                                                                                           href="http://cz.to8to.com/"
+                                                                                           title="常州装修网">常州</a><a
+                        target="_blank" href="http://xz.to8to.com/" title="徐州装修网">徐州</a><a target="_blank"
+                                                                                           href="http://tz.to8to.com/"
+                                                                                           title="台州装修网">台州</a><a
+                        target="_blank" href="http://jx.to8to.com/" title="嘉兴装修网">嘉兴</a><a target="_blank"
+                                                                                           href="http://jh.to8to.com/"
+                                                                                           title="金华装修网">金华</a><a
+                        target="_blank" href="http://qz.to8to.com/" title="泉州装修网">泉州</a><a target="_blank"
+                                                                                           href="http://nc.to8to.com/"
+                                                                                           title="南昌装修网">南昌</a><a
+                        target="_blank" href="http://ganzhou.to8to.com/" title="赣州装修网">赣州</a><a target="_blank"
+                                                                                                href="http://lianyungang.to8to.com/"
+                                                                                                title="连云港装修网">连云港</a><a
+                        target="_blank" href="http://kunshan.to8to.com/" title="昆山装修网">昆山</a><a target="_blank"
+                                                                                                href="http://suqian.to8to.com/"
+                                                                                                title="宿迁装修网">宿迁</a><a
+                        target="_blank" href="http://yangzhou.to8to.com/" title="扬州装修网">扬州</a><a target="_blank"
+                                                                                                 href="http://zhenjiang.to8to.com/"
+                                                                                                 title="镇江装修网">镇江</a><a
+                        target="_blank" href="http://huaian.to8to.com/" title="淮安装修网">淮安</a><a target="_blank"
+                                                                                               href="http://quzhou.to8to.com/"
+                                                                                               title="衢州装修网">衢州</a><a
+                        target="_blank" href="http://huzhou.to8to.com/" title="湖州装修网">湖州</a><a target="_blank"
+                                                                                               href="http://zhoushan.to8to.com/"
+                                                                                               title="舟山装修网">舟山</a><a
+                        target="_blank" href="http://shaoxing.to8to.com/" title="绍兴装修网">绍兴</a><a target="_blank"
+                                                                                                 href="http://wuhu.to8to.com/"
+                                                                                                 title="芜湖装修网">芜湖</a><a
+                        target="_blank" href="http://jiujiang.to8to.com/" title="九江装修网">九江</a><a target="_blank"
+                                                                                                 href="http://yancheng.to8to.com/"
+                                                                                                 title="盐城装修网">盐城</a><a
+                        target="_blank" href="http://ahsz.to8to.com/" title="宿州装修网">宿州</a><a target="_blank"
+                                                                                             href="http://huangshan.to8to.com/"
+                                                                                             title="黄山装修网">黄山</a><a
+                        target="_blank" href="http://jiangyin.to8to.com/" title="江阴装修网">江阴</a><a target="_blank"
+                                                                                                 href="http://zhangzhou.to8to.com/"
+                                                                                                 title="漳州装修网">漳州</a><a
+                        target="_blank" href="http://zibo.to8to.com/" title="淄博装修网">淄博</a><a target="_blank"
+                                                                                             href="http://linyi.to8to.com/"
+                                                                                             title="临沂装修网">临沂</a><a
+                        target="_blank" href="http://anqing.to8to.com/" title="安庆装修网">安庆</a><a target="_blank"
+                                                                                               href="http://taizhou.to8to.com/"
+                                                                                               title="泰州装修网">泰州</a><a
+                        target="_blank" href="http://heze.to8to.com/" title="菏泽装修网">菏泽</a><a target="_blank"
+                                                                                             href="http://zaozhuang.to8to.com/"
+                                                                                             title="枣庄装修网">枣庄</a><a
+                        target="_blank" href="http://lishui.to8to.com/" title="丽水装修网">丽水</a><a target="_blank"
+                                                                                               href="http://yingtan.to8to.com/"
+                                                                                               title="鹰潭装修网">鹰潭</a><a
+                        target="_blank" href="http://weihai.to8to.com/" title="威海装修网">威海</a><a target="_blank"
+                                                                                               href="http://dongying.to8to.com/"
+                                                                                               title="东营装修网">东营</a><a
+                        target="_blank" href="http://putian.to8to.com/" title="莆田装修网">莆田</a><a target="_blank"
+                                                                                               href="http://longyan.to8to.com/"
+                                                                                               title="龙岩装修网">龙岩</a><a
+                        target="_blank" href="http://yichun.to8to.com/" title="宜春装修网">宜春</a><a target="_blank"
+                                                                                               href="http://binzhou.to8to.com/"
+                                                                                               title="滨州装修网">滨州</a><a
+                        target="_blank" href="http://liaocheng.to8to.com/" title="聊城装修网">聊城</a><a target="_blank"
+                                                                                                  href="http://taian.to8to.com/"
+                                                                                                  title="泰安装修网">泰安</a><a
+                        target="_blank" href="http://fuzhou.to8to.com/" title="抚州装修网">抚州</a><a target="_blank"
+                                                                                               href="http://jian.to8to.com/"
+                                                                                               title="吉安装修网">吉安</a><a
+                        target="_blank" href="http://jingdezhen.to8to.com/" title="景德镇装修网">景德镇</a><a target="_blank"
+                                                                                                     href="http://xm.to8to.com/"
+                                                                                                     title="厦门装修网">厦门</a><a
+                        target="_blank" href="http://ningde.to8to.com/" title="宁德装修网">宁德</a><a target="_blank"
+                                                                                               href="http://nanping.to8to.com/"
+                                                                                               title="南平装修网">南平</a><a
+                        target="_blank" href="http://hf.to8to.com/" title="合肥装修网">合肥</a><a target="_blank"
+                                                                                           href="http://ty.to8to.com/"
+                                                                                           title="太原装修网">太原</a><a
+                        target="_blank" href="http://yichang.to8to.com/" title="宜昌装修网">宜昌</a><a target="_blank"
+                                                                                                href="http://chuzhou.to8to.com/"
+                                                                                                title="滁州装修网">滁州</a><a
+                        target="_blank" href="http://huainan.to8to.com/" title="淮南装修网">淮南</a><a target="_blank"
+                                                                                                href="http://liuan.to8to.com/"
+                                                                                                title="六安装修网">六安</a><a
+                        target="_blank" href="http://fuyang.to8to.com/" title="阜阳装修网">阜阳</a><a target="_blank"
+                                                                                               href="http://bengbu.to8to.com/"
+                                                                                               title="蚌埠装修网">蚌埠</a><a
+                        target="_blank" href="http://datong.to8to.com/" title="大同装修网">大同</a><a target="_blank"
+                                                                                               href="http://bozhou.to8to.com/"
+                                                                                               title="亳州装修网">亳州</a><a
+                        target="_blank" href="http://jinzhong.to8to.com/" title="晋中装修网">晋中</a><a target="_blank"
+                                                                                                 href="http://maanshan.to8to.com/"
+                                                                                                 title="马鞍山装修网">马鞍山</a><a
+                        target="_blank" href="http://taicang.to8to.com/" title="太仓装修网">太仓</a><a target="_blank"
+                                                                                                href="http://zhangjiagang.to8to.com/"
+                                                                                                title="张家港装修网">张家港</a>
+                </div>
+            </div>
+            <div class="cs_zs">
+                <div class="title_type2">华南地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://gz.to8to.com/" title="广州装修网">广州</a><a
+                        target="_blank" href="http://sz.to8to.com/" title="深圳装修网">深圳</a><a target="_blank"
+                                                                                           href="http://dg.to8to.com/"
+                                                                                           title="东莞装修网">东莞</a><a
+                        target="_blank" href="http://fs.to8to.com/" title="佛山装修网">佛山</a><a target="_blank"
+                                                                                           href="http://huizhou.to8to.com/"
+                                                                                           title="惠州装修网">惠州</a><a
+                        target="_blank" href="http://sanya.to8to.com/" title="三亚装修网">三亚</a><a target="_blank"
+                                                                                              href="http://zhongshan.to8to.com/"
+                                                                                              title="中山装修网">中山</a><a
+                        target="_blank" href="http://zhuhai.to8to.com/" title="珠海装修网">珠海</a><a target="_blank"
+                                                                                               href="http://shantou.to8to.com/"
+                                                                                               title="汕头装修网">汕头</a><a
+                        target="_blank" href="http://qingyuan.to8to.com/" title="清远装修网">清远</a><a target="_blank"
+                                                                                                 href="http://jiangmen.to8to.com/"
+                                                                                                 title="江门装修网">江门</a><a
+                        target="_blank" href="http://zhaoqing.to8to.com/" title="肇庆装修网">肇庆</a><a target="_blank"
+                                                                                                 href="http://nn.to8to.com/"
+                                                                                                 title="南宁装修网">南宁</a><a
+                        target="_blank" href="http://lz.to8to.com/" title="柳州装修网">柳州</a><a target="_blank"
+                                                                                           href="http://haikou.to8to.com/"
+                                                                                           title="海口装修网">海口</a><a
+                        target="_blank" href="http://beihai.to8to.com/" title="北海装修网">北海</a><a target="_blank"
+                                                                                               href="http://guilin.to8to.com/"
+                                                                                               title="桂林装修网">桂林</a><a
+                        target="_blank" href="http://yangjiang.to8to.com/" title="阳江装修网">阳江</a><a target="_blank"
+                                                                                                  href="http://ningde.to8to.com/"
+                                                                                                  title="宁德装修网">宁德</a><a
+                        target="_blank" href="http://heyuan.to8to.com/" title="河源装修网">河源</a><a target="_blank"
+                                                                                               href="http://yunfu.to8to.com/"
+                                                                                               title="云浮装修网">云浮</a><a
+                        target="_blank" href="http://zhanjiang.to8to.com/" title="湛江装修网">湛江</a><a target="_blank"
+                                                                                                  href="http://shaoguan.to8to.com/"
+                                                                                                  title="韶关装修网">韶关</a><a
+                        target="_blank" href="http://baise.to8to.com/" title="百色装修网">百色</a><a target="_blank"
+                                                                                              href="http://maoming.to8to.com/"
+                                                                                              title="茂名装修网">茂名</a><a
+                        target="_blank" href="http://jieyang.to8to.com/" title="揭阳装修网">揭阳</a><a target="_blank"
+                                                                                                href="http://fcg.to8to.com/"
+                                                                                                title="防城港装修网">防城港</a><a
+                        target="_blank" href="http://guigang.to8to.com/" title="贵港装修网">贵港</a><a target="_blank"
+                                                                                                href="http://shanwei.to8to.com/"
+                                                                                                title="汕尾装修网">汕尾</a><a
+                        target="_blank" href="http://wuzhou.to8to.com/" title="梧州装修网">梧州</a><a target="_blank"
+                                                                                               href="http://0775.to8to.com/"
+                                                                                               title="玉林装修网">玉林</a><a
+                        target="_blank" href="http://hechi.to8to.com/" title="河池装修网">河池</a><a target="_blank"
+                                                                                              href="http://qionghai.to8to.com/"
+                                                                                              title="琼海装修网">琼海</a><a
+                        target="_blank" href="http://chaozhou.to8to.com/" title="潮州装修网">潮州</a></div>
+            </div>
+            <div class="cs_zs">
+                <div class="title_type2">华中地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://wh.to8to.com/" title="武汉装修网">武汉</a><a
+                        target="_blank" href="http://cs.to8to.com/" title="长沙装修网">长沙</a><a target="_blank"
+                                                                                           href="http://zz.to8to.com/"
+                                                                                           title="郑州装修网">郑州</a><a
+                        target="_blank" href="http://ny.to8to.com/" title="南阳装修网">南阳</a><a target="_blank"
+                                                                                           href="http://ly.to8to.com/"
+                                                                                           title="洛阳装修网">洛阳</a><a
+                        target="_blank" href="http://jz.to8to.com/" title="焦作装修网">焦作</a><a target="_blank"
+                                                                                           href="http://zhuzhou.to8to.com/"
+                                                                                           title="株洲装修网">株洲</a><a
+                        target="_blank" href="http://kaifeng.to8to.com/" title="开封装修网">开封</a><a target="_blank"
+                                                                                                href="http://xinyang.to8to.com/"
+                                                                                                title="信阳装修网">信阳</a><a
+                        target="_blank" href="http://shiyan.to8to.com/" title="十堰装修网">十堰</a><a target="_blank"
+                                                                                               href="http://xiangyang.to8to.com/"
+                                                                                               title="襄阳装修网">襄阳</a><a
+                        target="_blank" href="http://xiangtan.to8to.com/" title="湘潭装修网">湘潭</a><a target="_blank"
+                                                                                                 href="http://yueyang.to8to.com/"
+                                                                                                 title="岳阳装修网">岳阳</a><a
+                        target="_blank" href="http://zhumadian.to8to.com/" title="驻马店装修网">驻马店</a><a target="_blank"
+                                                                                                    href="http://changde.to8to.com/"
+                                                                                                    title="常德装修网">常德</a><a
+                        target="_blank" href="http://xinxiang.to8to.com/" title="新乡装修网">新乡</a><a target="_blank"
+                                                                                                 href="http://huangshi.to8to.com/"
+                                                                                                 title="黄石装修网">黄石</a><a
+                        target="_blank" href="http://yiyang.to8to.com/" title="益阳装修网">益阳</a><a target="_blank"
+                                                                                               href="http://chenzhou.to8to.com/"
+                                                                                               title="郴州装修网">郴州</a><a
+                        target="_blank" href="http://xiaogan.to8to.com/" title="孝感装修网">孝感</a><a target="_blank"
+                                                                                                href="http://zhangjiajie.to8to.com/"
+                                                                                                title="张家界装修网">张家界</a><a
+                        target="_blank" href="http://huaihua.to8to.com/" title="怀化装修网">怀化</a><a target="_blank"
+                                                                                                href="http://loudi.to8to.com/"
+                                                                                                title="娄底装修网">娄底</a><a
+                        target="_blank" href="http://zhaoyang.to8to.com/" title="邵阳装修网">邵阳</a><a target="_blank"
+                                                                                                 href="http://xianning.to8to.com/"
+                                                                                                 title="咸宁装修网">咸宁</a><a
+                        target="_blank" href="http://sanmenxia.to8to.com/" title="三门峡装修网">三门峡</a><a target="_blank"
+                                                                                                    href="http://huanggang.to8to.com/"
+                                                                                                    title="黄冈装修网">黄冈</a><a
+                        target="_blank" href="http://zhoukou.to8to.com/" title="周口装修网">周口</a><a target="_blank"
+                                                                                                href="http://xuchang.to8to.com/"
+                                                                                                title="许昌装修网">许昌</a><a
+                        target="_blank" href="http://jingzhou.to8to.com/" title="荆州装修网">荆州</a><a target="_blank"
+                                                                                                 href="http://pds.to8to.com/"
+                                                                                                 title="平顶山装修网">平顶山</a><a
+                        target="_blank" href="http://puyang.to8to.com/" title="濮阳装修网">濮阳</a><a target="_blank"
+                                                                                               href="http://enshi.to8to.com/"
+                                                                                               title="恩施装修网">恩施</a><a
+                        target="_blank" href="http://ezhou.to8to.com/" title="鄂州装修网">鄂州</a><a target="_blank"
+                                                                                              href="http://luohe.to8to.com/"
+                                                                                              title="漯河装修网">漯河</a><a
+                        target="_blank" href="http://shangqiu.to8to.com/" title="商丘装修网">商丘</a></div>
+            </div>
+            <div class="cs_zs">
+                <div class="title_type2">东北地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://dq.to8to.com/" title="大庆装修网">大庆</a><a
+                        target="_blank" href="http://heb.to8to.com/" title="哈尔滨装修网">哈尔滨</a><a target="_blank"
+                                                                                              href="http://mudanjiang.to8to.com/"
+                                                                                              title="牡丹江装修网">牡丹江</a><a
+                        target="_blank" href="http://jilin.to8to.com/" title="吉林装修网">吉林</a><a target="_blank"
+                                                                                              href="http://sy.to8to.com/"
+                                                                                              title="沈阳装修网">沈阳</a><a
+                        target="_blank" href="http://jinzhou.to8to.com/" title="锦州装修网">锦州</a><a target="_blank"
+                                                                                                href="http://tieling.to8to.com/"
+                                                                                                title="铁岭装修网">铁岭</a><a
+                        target="_blank" href="http://chaoyang.to8to.com/" title="朝阳装修网">朝阳</a><a target="_blank"
+                                                                                                 href="http://dl.to8to.com/"
+                                                                                                 title="大连装修网">大连</a><a
+                        target="_blank" href="http://cc.to8to.com/" title="长春装修网">长春</a><a target="_blank"
+                                                                                           href="http://yingkou.to8to.com/"
+                                                                                           title="营口装修网">营口</a><a
+                        target="_blank" href="http://as.to8to.com/" title="鞍山装修网">鞍山</a><a target="_blank"
+                                                                                           href="http://qinhuangdao.to8to.com/"
+                                                                                           title="秦皇岛装修网">秦皇岛</a></div>
+            </div>
+            <div class="cs_zs">
+                <div class="title_type2">西南地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://bijie.to8to.com/" title="毕节装修网">毕节</a><a
+                        target="_blank" href="http://cq.to8to.com/" title="重庆装修网">重庆</a><a target="_blank"
+                                                                                           href="http://cd.to8to.com/"
+                                                                                           title="成都装修网">成都</a><a
+                        target="_blank" href="http://km.to8to.com/" title="昆明装修网">昆明</a><a target="_blank"
+                                                                                           href="http://gy.to8to.com/"
+                                                                                           title="贵阳装修网">贵阳</a><a
+                        target="_blank" href="http://luzhou.to8to.com/" title="泸州装修网">泸州</a><a target="_blank"
+                                                                                               href="http://zigong.to8to.com/"
+                                                                                               title="自贡装修网">自贡</a><a
+                        target="_blank" href="http://deyang.to8to.com/" title="德阳装修网">德阳</a><a target="_blank"
+                                                                                               href="http://mianyang.to8to.com/"
+                                                                                               title="绵阳装修网">绵阳</a><a
+                        target="_blank" href="http://kaili.to8to.com/" title="凯里装修网">凯里</a><a target="_blank"
+                                                                                              href="http://zunyi.to8to.com/"
+                                                                                              title="遵义装修网">遵义</a><a
+                        target="_blank" href="http://dali.to8to.com/" title="大理装修网">大理</a><a target="_blank"
+                                                                                             href="http://xishuangbanna.to8to.com/"
+                                                                                             title="西双版纳装修网">西双版纳</a><a
+                        target="_blank" href="http://liupanshui.to8to.com/" title="六盘水装修网">六盘水</a><a target="_blank"
+                                                                                                     href="http://qujing.to8to.com/"
+                                                                                                     title="曲靖装修网">曲靖</a><a
+                        target="_blank" href="http://meishan.to8to.com/" title="眉山装修网">眉山</a><a target="_blank"
+                                                                                                href="http://tongren.to8to.com/"
+                                                                                                title="铜仁装修网">铜仁</a><a
+                        target="_blank" href="http://puer.to8to.com/" title="普洱装修网">普洱</a><a target="_blank"
+                                                                                             href="http://baoshan.to8to.com/"
+                                                                                             title="保山装修网">保山</a><a
+                        target="_blank" href="http://yaan.to8to.com/" title="雅安装修网">雅安</a><a target="_blank"
+                                                                                             href="http://yuxi.to8to.com/"
+                                                                                             title="玉溪装修网">玉溪</a><a
+                        target="_blank" href="http://leshan.to8to.com/" title="乐山装修网">乐山</a><a target="_blank"
+                                                                                               href="http://anshun.to8to.com/"
+                                                                                               title="安顺装修网">安顺</a><a
+                        target="_blank" href="http://neijiang.to8to.com/" title="内江装修网">内江</a><a target="_blank"
+                                                                                                 href="http://yibin.to8to.com/"
+                                                                                                 title="宜宾装修网">宜宾</a><a
+                        target="_blank" href="http://suining.to8to.com/" title="遂宁装修网">遂宁</a><a target="_blank"
+                                                                                                href="http://lincang.to8to.com/"
+                                                                                                title="临沧装修网">临沧</a><a
+                        target="_blank" href="http://dazhou.to8to.com/" title="达州装修网">达州</a><a target="_blank"
+                                                                                               href="http://chuxiong.to8to.com/"
+                                                                                               title="楚雄装修网">楚雄</a><a
+                        target="_blank" href="http://nanchong.to8to.com/" title="南充装修网">南充</a></div>
+            </div>
+            <div class="cs_zs">
+                <div class="title_type2">西北地区</div>
+                <div class="xzcs_dt"><a target="_blank" href="http://yulin.to8to.com/" title="榆林装修网">榆林</a><a
+                        target="_blank" href="http://xa.to8to.com/" title="西安装修网">西安</a><a target="_blank"
+                                                                                           href="http://lanzhou.to8to.com/"
+                                                                                           title="兰州装修网">兰州</a><a
+                        target="_blank" href="http://wlmq.to8to.com/" title="乌鲁木齐装修网">乌鲁木齐</a><a target="_blank"
+                                                                                                 href="http://yinchuan.to8to.com/"
+                                                                                                 title="银川装修网">银川</a><a
+                        target="_blank" href="http://xianyang.to8to.com/" title="咸阳装修网">咸阳</a><a target="_blank"
+                                                                                                 href="http://hanzhong.to8to.com/"
+                                                                                                 title="汉中装修网">汉中</a><a
+                        target="_blank" href="http://xining.to8to.com/" title="西宁装修网">西宁</a><a target="_blank"
+                                                                                               href="http://baoji.to8to.com/"
+                                                                                               title="宝鸡装修网">宝鸡</a><a
+                        target="_blank" href="http://yili.to8to.com/" title="伊犁装修网">伊犁</a><a target="_blank"
+                                                                                             href="http://longnan.to8to.com/"
+                                                                                             title="陇南装修网">陇南</a><a
+                        target="_blank" href="http://weinan.to8to.com/" title="渭南装修网">渭南</a><a target="_blank"
+                                                                                               href="http://ankang.to8to.com/"
+                                                                                               title="安康装修网">安康</a><a
+                        target="_blank" href="http://pl.to8to.com/" title="平凉装修网">平凉</a></div>
+            </div>
+            <i class="city_bg"></i>
+        </div>
+    </div>
+
+    <!--尾部-->
+    <script type="text/javascript">
+        document.write(footer.import.body.innerHTML);
+    </script>
+</div>
+</body>
+</html>

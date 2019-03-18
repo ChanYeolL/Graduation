@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--登录-->
+<html style="overflow-y: scroll;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ChanYeol室内装修网站</title>
+    <link rel="icon" href="img/logo.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" charset="utf-8">
+    <!--尾部-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" charset="utf-8">
+    <!--通用-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--import引入-->
+    <link rel="import" href="header.html" id="header"/>
+    <link rel="import" href="footer.html" id="footer"/>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style="padding-top: 105px">
+<div class="global-wrap">
+    <script type="text/javascript">
+        document.write(header.import.body.innerHTML);
+    </script>
+
+    <div class="main-container body-background">
+        <div class="container">
+            <div class="register_main">
+                <form id="formLogin" action="#" class="form-login animate-box fadeInUp animated-fast">
+                    <h3 class="text-center">登 &nbsp;&nbsp; 录</h3>
+                    <div class="form-group">
+
+                        <input type="text" maxlength="11" class="form-control" id="username" placeholder="填写用户名/电话号码" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" maxlength="15" class="form-control" id="password" placeholder="填写密码" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" maxlength="4" class="form-control" style="width: 70%" id="captcha" placeholder="验证码" autocomplete="off">
+                        <input type="text" readonly  id="checkCode"  style="width: 80px"  onclick="createCode()">
+                    </div>
+                    <div class="form-group remebered">
+                        <label for="remember"><input type="checkbox" id="remember">  记住我</label>
+                    </div>
+                    <div class="form-group">
+                        <p class="change">没有账号？<a href="user_register.html">注册</a> | <a href="findpassword.html">找回密码</a> </p>
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle=""><input type="button" value="登&nbsp;&nbsp;录" class="btn btn-primary center-block" ></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.write(footer.import.body.innerHTML);
+    </script>
+</div>
+
+</body>
+</html>

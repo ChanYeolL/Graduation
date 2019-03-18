@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- 写日记-->
+<html lang="en" class=" en" style="overflow-y: initial;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ChanYeol室内装修网站</title>
+    <link rel="icon" href="img/logo.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" charset="utf-8">
+    <!--尾部-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" charset="utf-8">
+    <!--通用-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
+<!--    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">-->
+
+    <!--import引入-->
+    <link rel="import" href="header.html" id="header"/>
+    <link rel="import" href="footer.html" id="footer"/>
+
+    <link rel="stylesheet" type="text/css" href="css/commonChunk.css">
+    <link rel="stylesheet" type="text/css" href="css/diary.css">
+
+</head>
+<body class="narrow_980" style="overflow-y: visible; height: 100%; margin-right: 0px;padding-top: 105px">
+
+    <!--头部-->
+    <script type="text/javascript">
+        document.write(header.import.body.innerHTML);
+    </script>
+    <!--主体-->
+    <div class="zxgl_write">
+        <div class="zgs_nav_div">
+            <div class="znd">
+                <ul>
+                    <li>
+                        <a href="http://www.to8to.com/gonglve/">
+                            <span>ChanYeol装修</span><em></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.to8to.com/riji/">
+                            <span>装修日记</span><em></em>
+                        </a>
+                    </li>
+                    <li class="on">
+                        写日记
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <ul class="diary_detail_tab">
+                <li class="on">
+                    <span>写日记</span>
+                </li>
+            </ul>
+            <div class="write_diary">
+                <form action="http://www.to8to.com/riji/editscenediary.php" name="form1" id="pubForm" method="post">
+                    <input type="hidden" name="diary_id" id="diary_id" value="">
+                    <input type="hidden" name="action" id="action" value="add">
+                    <input type="hidden" name="scene_id" id="scene_id" value="5172916">
+                    <input type="hidden" name="progress_id" id="progress_id" value="1">
+                    <input type="hidden" name="tag_id" id="tag_id" value="1">
+                    <div class="write_diary_hd clear">
+                        <div class="diary_editor">
+                            <div class="diary_textarea">
+                                <textarea name="content" id="diaryContent" placeholder="说点什么吧，来记录您装修过程的点点滴滴"
+                                          style="border-color: rgb(221, 221, 221);"></textarea>
+                                <div id="lenTip" class="bg_f8f8f8" style="display:none">你还可以输入<em>3000</em>个汉字</div>
+                            </div>
+                        </div>
+                        <div class="write_info">
+                            <div class="write_info_item">
+                                <div class="info_hd">选择装修阶段
+                                    <em id="progress_exp">制定整体预算。选择装修风格、主材、家具、家电配饰等。寻找合适的施工方，签订合同后开工！</em>
+                                </div>
+                                <div class="info_bd pick_stage">
+                                    <div class="stage_hd">
+                                        <ul class="clearfix" id="progressType">
+                                            <li class="on">
+                                                <a pro-id="1" pro-type="1" href="javascript:;" order="制定整体预算。选择装修风格、主材、家具、家电配饰等。寻找合适的施工方，签订合同后开工！">
+                                                    <span>准备</span></a>
+                                            </li>
+                                            <li><i></i>
+                                                <a pro-id="2" pro-type="2" href="javascript:;"order="开工前到物业办理装修许可，现场核对装修项目，若是二手房，需要拆掉旧有电器装饰，改变房屋格局。">
+                                                    <span>拆改</span></a>
+                                            </li>
+                                            <li><i></i>
+                                                <a pro-id="3" pro-type="3" href="javascript:;"order="切割开槽，布设电/水管。进行第一次验收。水路要打压测试电路要通电验收。这是装修大坑，需控制预算，小心超支">
+                                                    <span>水电</span></a>
+                                            </li>
+                                            <li><i></i><a pro-id="4" pro-type="4" href="javascript:;"order="防水和基层处理。包含天花吊顶，铺墙砖地砖和家具的定制。这一阶段历时最久，工序最复杂，要做好项目量核对。">
+                                                <span>泥木</span></a>
+                                            </li>
+                                            <li><i></i><a pro-id="5" pro-type="5" href="javascript:;"
+                                                          order="墙面和家具粉饰工作。这里油漆真伪和施工质量，会影响房屋整体装修感觉。">
+                                                <span>油漆</span></a>
+                                            </li>
+                                            <li><i></i><a pro-id="6" pro-type="6" href="javascript:;"
+                                                          order="施工现场完工。安装橱柜、地板、水龙头等基础设备，做最后一次验收，结清尾款并索要质保单。">
+                                                <span>竣工安装</span></a>
+                                            </li>
+                                            <li><i></i><a pro-id="7" pro-type="7" href="javascript:;"
+                                                          order="设计居家装饰布置。选购家具电器、家居配饰行摆放布置。在施工前定好家具的尺寸和摆放位置，这个阶段会更省心。">
+                                                <span>软装</span></a>
+                                            </li>
+                                            <li><i></i><a pro-id="8" pro-type="8" href="javascript:;"
+                                                          order="全面完工住新房。做完以上工作后，就可以入住新家啦！当然，大部分人都会先让家里散散甲醛味哦！">
+                                                <span>入住</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="info_hd mt30">选择日记标签<em>用一个标签来描述你日记的内容吧~</em></div>
+                                    <div class="stage_keys clear" id="tagType" style="display: none;">
+                                        <div id="tag-type-1" style="">
+                                            <a href="javascript:;" tag-id="1" class="keyon">前期准备</a>
+                                            <a href="javascript:;" tag-id="2">交房验房</a>
+                                            <a href="javascript:;" tag-id="3">前期设计</a>
+                                            <a href="javascript:;" tag-id="5">签装修保</a>
+                                            <a href="javascript:;" tag-id="500">开工大吉</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-2" style="display: none">
+                                            <a href="javascript:;" tag-id="6">装修开工</a>
+                                            <a href="javascript:;" tag-id="7">主体拆改</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-3" style="display: none">
+                                            <a href="javascript:;" tag-id="9">水电改造</a>
+                                            <a href="javascript:;" tag-id="10">水电验收</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-4" style="display: none">
+                                            <a href="javascript:;" tag-id="12">防水</a>
+                                            <a href="javascript:;" tag-id="13">贴砖</a>
+                                            <a href="javascript:;" tag-id="14">木工</a>
+                                            <a href="javascript:;" tag-id="15">泥木验收</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-5" style="display: none">
+                                            <a href="javascript:;" tag-id="19">油漆验收</a>
+                                            <a href="javascript:;" tag-id="17">墙面刷漆</a>
+                                            <a href="javascript:;" tag-id="18">家具刷漆</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-6" style="display: none">
+                                            <a href="javascript:;" tag-id="22">橱柜安装</a>
+                                            <a href="javascript:;" tag-id="23">门窗安装</a>
+                                            <a href="javascript:;" tag-id="24">铺地板</a>
+                                            <a href="javascript:;" tag-id="25">贴壁纸</a>
+                                            <a href="javascript:;" tag-id="26">插座安装</a>
+                                            <a href="javascript:;" tag-id="27">灯具安装</a>
+                                            <a href="javascript:;" tag-id="28">五金安装</a>
+                                            <a href="javascript:;" tag-id="29">洁具安装</a>
+                                            <a href="javascript:;" tag-id="30">窗帘安装</a>
+                                            <a href="javascript:;" tag-id="31">竣工验收</a>
+                                            <a href="javascript:;" tag-id="21">厨卫吊顶</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-7" style="display: none">
+                                            <a href="javascript:;" tag-id="33">拓荒保洁</a>
+                                            <a href="javascript:;" tag-id="34">家具进场</a>
+                                            <a href="javascript:;" tag-id="35">家电安装</a>
+                                            <a href="javascript:;" tag-id="36">后期装饰</a>
+                                            <a href="javascript:;" tag-id="37">甲醛检测</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-8" style="display: none">
+                                            <a href="javascript:;" tag-id="40">毕业照</a>
+                                            <a href="javascript:;" tag-id="41">经验总结</a>
+                                            <a href="javascript:;" tag-id="39">乔迁新居</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                        <div id="tag-type-9" style="display: none">
+                                            <a href="javascript:;" tag-id="51">碎碎念</a>
+                                            <a href="javascript:;" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                            <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        </div>
+                                    </div>
+                                    <div style="" class="stage_keys clear" id="allTagType">
+                                        <a href="javascript:;" pro-id="1" id="tag_1" tag-id="1" class="keyon">前期准备</a>
+                                        <a href="javascript:;" pro-id="1" id="tag_2" tag-id="2">交房验房</a>
+                                        <a href="javascript:;" pro-id="1" id="tag_3" tag-id="3">前期设计</a>
+                                        <a href="javascript:;" pro-id="1" id="tag_5" style="" tag-id="5">签装修保</a>
+                                        <a href="javascript:;" pro-id="1" id="tag_500" tag-id="500">开工大吉</a>
+                                        <a href="javascript:;" pro-id="2" id="tag_6" tag-id="6">装修开工</a>
+                                        <a href="javascript:;" pro-id="2" id="tag_7" tag-id="7">主体拆改</a>
+                                        <a href="javascript:;" pro-id="3" id="tag_9" tag-id="9">水电改造</a>
+                                        <a href="javascript:;" pro-id="3" id="tag_10" style="display:none" tag-id="10">水电验收</a>
+                                        <a href="javascript:;" pro-id="4" id="tag_12" tag-id="12">防水</a>
+                                        <a href="javascript:;" pro-id="4" id="tag_13" tag-id="13">贴砖</a>
+                                        <a href="javascript:;" pro-id="4" id="tag_14" tag-id="14">木工</a>
+                                        <a href="javascript:;" pro-id="4" id="tag_15" style="display:none"
+                                           tag-id="15">泥木验收</a>
+                                        <a href="javascript:;" pro-id="5" id="tag_19" style="display:none"
+                                           tag-id="19">油漆验收</a>
+                                        <a href="javascript:;" pro-id="5" id="tag_17" tag-id="17">墙面刷漆</a>
+                                        <a href="javascript:;" pro-id="5" id="tag_18" tag-id="18">家具刷漆</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_22" tag-id="22">橱柜安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_23" tag-id="23">门窗安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_24" tag-id="24">铺地板</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_25" tag-id="25">贴壁纸</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_26" tag-id="26">插座安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_27" tag-id="27">灯具安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_28" tag-id="28">五金安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_29" tag-id="29">洁具安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_30" tag-id="30">窗帘安装</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_31" style="display:none" tag-id="31">竣工验收</a>
+                                        <a href="javascript:;" pro-id="6" id="tag_21" tag-id="21">厨卫吊顶</a>
+                                        <a href="javascript:;" pro-id="7" id="tag_33" tag-id="33">拓荒保洁</a>
+                                        <a href="javascript:;" pro-id="7" id="tag_34" tag-id="34">家具进场</a>
+                                        <a href="javascript:;" pro-id="7" id="tag_35" tag-id="35">家电安装</a>
+                                        <a href="javascript:;" pro-id="7" id="tag_36" tag-id="36">后期装饰</a>
+                                        <a href="javascript:;" pro-id="7" id="tag_37" style="display:none" tag-id="37">甲醛检测</a>
+                                        <a href="javascript:;" pro-id="8" id="tag_40" tag-id="40">毕业照</a>
+                                        <a href="javascript:;" pro-id="8" id="tag_41" tag-id="41">经验总结</a>
+                                        <a href="javascript:;" pro-id="8" id="tag_39" tag-id="39">乔迁新居</a>
+                                        <a href="javascript:;" pro-id="9" id="tag_51" tag-id="51">碎碎念</a>
+                                        <a href="javascript:;" pro-id="9" id="tag_50" tag-id="50">产品选购</a>
+                                    </div>
+                                    <a href="javascript:;" class="more" id="unfold" style="display: none;">更多<i
+                                            class="arrow_gray_down"></i></a>
+                                    <a href="javascript:;" class="more" id="fold" style="">收起<i
+                                            class="arrow_gray_up"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="write_info_item">
+                        <div class="info_hd mb20">选择日期<em>如果是写回忆贴，可修改为日记发生当天的日期</em></div>
+                        <div class="info_bd border_line clearfix">
+                            <span class="text_date">
+                            <input type="text" readonly="readonly" name="otime" value="2019-03-03" id="userTime">
+                            <a class="text_date_ico" href="javascript:;"></a>
+                            </span>
+                            <a href="javascript:;" class="date_modify">修改日期</a>
+                        </div>
+                    </div>
+                    <div class="upload_pic">
+                        <div class="upload_hd">上传装修照片<span>选择装修过程中的照片，每张低于5M，支持JPG/JPEG/PNG格式，最多9张</span></div>
+                        <div class="upload_bd">
+                            <ul class="clearfix" id="upload_result_1">
+                                <li><a href="javascript:;" class="upload_lnk">选择图片</a>
+                                    <div id="file_upload_1"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="original_statement on">
+                        <i class="ori_state_ico shwo_ori_detail"></i><span class="shwo_ori_detail">本内容由我原创</span><i
+                            class="ori_detail_ico"></i>
+                        <span class="ori_none_warn dn">&nbsp;&nbsp;*&nbsp;请勾选原创声明</span>
+                    </p>
+                    <div class="write_btn">
+                        <a href="javascript:;" class="post_btn" id="publish_diary">发布日记</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <script type="text/javascript">
+        document.write(footer.import.body.innerHTML);
+    </script>
+
+</body>
+</html>

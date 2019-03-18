@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<!--装修日记-->
+<html lang="en" class=" en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ChanYeol室内装修网站</title>
+    <link rel="icon" href="img/logo.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" type="text/css" href="css/footer.css" charset="utf-8">
+    <!--尾部-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" charset="utf-8">
+    <!--通用-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8">
+    <!--<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">-->
+
+    <!--import引入-->
+    <link rel="import" href="header.html" id="header"/>
+    <link rel="import" href="footer.html" id="footer"/>
+
+    <link rel="stylesheet" type="text/css" href="css/commonChunk.css">
+    <link rel="stylesheet" type="text/css" href="css/diary.css">
+
+</head>
+<body class="narrow_1220" style="padding-top: 105px">
+    <!--头部-->
+    <script type="text/javascript">
+        document.write(header.import.body.innerHTML);
+    </script>
+
+    <div class="">
+        <div class="container clearfix">
+            <div class="main">
+                <div class="zgs_select_type">
+                    <h1 class="zgs_meitu_nav">
+                        <ul>
+                            <li class="has_arrow">
+                                <a href="http://www.to8to.com/riji/">
+                                    全部日记
+                                </a>
+                                <span class="nav_arrow_right"></span>
+                            </li>
+                            <li class="nav_type_select">
+                            </li>
+                        </ul>
+                    </h1>
+                    <dl class="zgs_st_dl height_40">
+                        <dt>
+                            风格
+                        </dt>
+                        <dd>
+                            <div class="all_gz">
+                                <a href="http://www.to8to.com/riji/?style=1" rel="nofollow">简约</a>
+                                <a href="http://www.to8to.com/riji/?style=2" rel="nofollow">现代</a>
+                                <a href="http://www.to8to.com/riji/?style=3" rel="nofollow">中式</a>
+                                <a href="http://www.to8to.com/riji/?style=4" rel="nofollow">欧式</a>
+                                <a href="http://www.to8to.com/riji/?style=5" rel="nofollow">美式</a>
+                                <a href="http://www.to8to.com/riji/?style=6" rel="nofollow">田园</a>
+                                <a href="http://www.to8to.com/riji/?style=7" rel="nofollow">新古典</a>
+                                <a href="http://www.to8to.com/riji/?style=8" rel="nofollow">混搭</a>
+                                <a href="http://www.to8to.com/riji/?style=9" rel="nofollow">地中海</a>
+                                <a href="http://www.to8to.com/riji/?style=10" rel="nofollow">东南亚</a>
+                                <a href="http://www.to8to.com/riji/?style=11" rel="nofollow">日式</a>
+                                <a href="http://www.to8to.com/riji/?style=12" rel="nofollow">宜家</a>
+                                <a href="http://www.to8to.com/riji/?style=13" rel="nofollow">北欧</a>
+                                <a href="http://www.to8to.com/riji/?style=14" rel="nofollow">简欧</a>
+                            </div>
+                        </dd>
+                        <a href="javascript:void(0)" class="xgt_nav_showMore" onclick="javascript:showMore
+                        (this)"
+                           title="点击展开"></a></dl>
+                    <dl class="zgs_st_dl height_40">
+                        <dt>
+                            面积
+                        </dt>
+                        <dd>
+                            <div class="all_gz">
+                                <a href="http://www.to8to.com/riji/?area=1" rel="nofollow">60㎡以下</a>
+                                <a href="http://www.to8to.com/riji/?area=2" rel="nofollow">60-80㎡</a>
+                                <a href="http://www.to8to.com/riji/?area=3" rel="nofollow">80-100㎡</a>
+                                <a href="http://www.to8to.com/riji/?area=4" rel="nofollow">100-120㎡</a>
+                                <a href="http://www.to8to.com/riji/?area=5" rel="nofollow">120-150㎡</a>
+                                <a href="http://www.to8to.com/riji/?area=6" rel="nofollow">150㎡以上</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="zgs_st_dl zgs_st_cityBox height_40">
+                        <dt>城市</dt>
+                        <dd class="hot_city">
+                            <div>
+                                <a href="http://www.to8to.com/riji/bj">北京</a>
+                                <a href="http://www.to8to.com/riji/sh">上海</a>
+                                <a href="http://www.to8to.com/riji/gz">广州</a>
+                                <a href="http://www.to8to.com/riji/sz">深圳</a>
+                                <a href="http://www.to8to.com/riji/nj">南京</a>
+                                <a href="http://www.to8to.com/riji/suzhou">苏州</a>
+                                <a href="http://www.to8to.com/riji/hz">杭州</a>
+                                <a href="http://www.to8to.com/riji/hf">合肥</a>
+                                <a href="http://www.to8to.com/riji/cd">成都</a>
+                                <a href="http://www.to8to.com/riji/wx">无锡</a>
+                                <a href="http://www.to8to.com/riji/tj">天津</a>
+                                <a href="http://www.to8to.com/riji/zz">郑州</a>
+                            </div>
+                        </dd>
+                        <dd class="shaixuan" style="display: none;">
+                            <div class="all_gz">
+                                <a href="javascript:void(0)">A</a>
+                                <a href="javascript:void(0)">B</a>
+                                <a href="javascript:void(0)">C</a>
+                                <a href="javascript:void(0)">D</a>
+                                <a href="javascript:void(0)">E</a>
+                                <a href="javascript:void(0)">F</a>
+                                <a href="javascript:void(0)">G</a>
+                                <a href="javascript:void(0)">H</a>
+                                <a href="javascript:void(0)">J</a>
+                                <a href="javascript:void(0)">K</a>
+                                <a href="javascript:void(0)">L</a>
+                                <a href="javascript:void(0)">M</a>
+                                <a href="javascript:void(0)">N</a>
+                                <a href="javascript:void(0)">P</a>
+                                <a href="javascript:void(0)">Q</a>
+                                <a href="javascript:void(0)">R</a>
+                                <a href="javascript:void(0)">S</a>
+                                <a href="javascript:void(0)">T</a>
+                                <a href="javascript:void(0)">W</a>
+                                <a href="javascript:void(0)">X</a>
+                                <a href="javascript:void(0)">Y</a>
+                                <a href="javascript:void(0)">Z</a>
+                            </div>
+                        </dd>
+                        <dd class="zgs_st_city" style="display: none;">
+                            <div class="zgs_st_city_c">
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">A</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/anqing">安庆</a>
+                                        <a href="http://www.to8to.com/riji/ankang">安康</a>
+                                        <a href="http://www.to8to.com/riji/anyang">安阳</a>
+                                        <a href="http://www.to8to.com/riji/anshun">安顺</a>
+                                        <a href="http://www.to8to.com/riji/ahsz">宿州</a>
+                                        <a href="http://www.to8to.com/riji/akesu">阿克苏</a>
+                                        <a href="http://www.to8to.com/riji/aletai">阿勒泰</a>
+                                        <a href="http://www.to8to.com/riji/aba">阿坝</a>
+                                        <a href="http://www.to8to.com/riji/alsm">阿拉善</a>
+                                        <a href="http://www.to8to.com/riji/alaer">阿拉尔</a>
+                                        <a href="http://www.to8to.com/riji/ali">阿里</a>
+                                        <a href="http://www.to8to.com/riji/as">鞍山</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">B</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/bozhou">亳州</a>
+                                        <a href="http://www.to8to.com/riji/baoting">保亭</a>
+                                        <a href="http://www.to8to.com/riji/baoding">保定</a>
+                                        <a href="http://www.to8to.com/riji/baoshan">保山</a>
+                                        <a href="http://www.to8to.com/riji/baotou">包头</a>
+                                        <a href="http://www.to8to.com/riji/bj">北京</a>
+                                        <a href="http://www.to8to.com/riji/beihai">北海</a>
+                                        <a href="http://www.to8to.com/riji/boertala">博尔塔拉</a>
+                                        <a href="http://www.to8to.com/riji/baoji">宝鸡</a>
+                                        <a href="http://www.to8to.com/riji/bazhong">巴中</a>
+                                        <a href="http://www.to8to.com/riji/bynr">巴彦淖尔</a>
+                                        <a href="http://www.to8to.com/riji/bayinguoleng">巴音郭楞</a>
+                                        <a href="http://www.to8to.com/riji/benxi">本溪</a>
+                                        <a href="http://www.to8to.com/riji/bijie">毕节</a>
+                                        <a href="http://www.to8to.com/riji/binzhou">滨州</a>
+                                        <a href="http://www.to8to.com/riji/baicheng">白城</a>
+                                        <a href="http://www.to8to.com/riji/baishan">白山</a>
+                                        <a href="http://www.to8to.com/riji/baisha">白沙</a>
+                                        <a href="http://www.to8to.com/riji/baiyin">白银</a>
+                                        <a href="http://www.to8to.com/riji/baise">百色</a>
+                                        <a href="http://www.to8to.com/riji/bengbu">蚌埠</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">C</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/chongzuo">崇左</a>
+                                        <a href="http://www.to8to.com/riji/chaohu">巢湖</a>
+                                        <a href="http://www.to8to.com/riji/cz">常州</a>
+                                        <a href="http://www.to8to.com/riji/changde">常德</a>
+                                        <a href="http://www.to8to.com/riji/changshu">常熟</a>
+                                        <a href="http://www.to8to.com/riji/cd">成都</a>
+                                        <a href="http://www.to8to.com/riji/chengde">承德</a>
+                                        <a href="http://www.to8to.com/riji/changji">昌吉</a>
+                                        <a href="http://www.to8to.com/riji/changjiang">昌江</a>
+                                        <a href="http://www.to8to.com/riji/changdu">昌都</a>
+                                        <a href="http://www.to8to.com/riji/chaoyang">朝阳</a>
+                                        <a href="http://www.to8to.com/riji/chuxiong">楚雄</a>
+                                        <a href="http://www.to8to.com/riji/chizhou">池州</a>
+                                        <a href="http://www.to8to.com/riji/cangzhou">沧州</a>
+                                        <a href="http://www.to8to.com/riji/chuzhou">滁州</a>
+                                        <a href="http://www.to8to.com/riji/chaozhou">潮州</a>
+                                        <a href="http://www.to8to.com/riji/chengmai">澄迈</a>
+                                        <a href="http://www.to8to.com/riji/chifeng">赤峰</a>
+                                        <a href="http://www.to8to.com/riji/chenzhou">郴州</a>
+                                        <a href="http://www.to8to.com/riji/cq">重庆</a>
+                                        <a href="http://www.to8to.com/riji/cc">长春</a>
+                                        <a href="http://www.to8to.com/riji/cs">长沙</a>
+                                        <a href="http://www.to8to.com/riji/changzhi">长治</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">D</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/dongfang">东方</a>
+                                        <a href="http://www.to8to.com/riji/dg">东莞</a>
+                                        <a href="http://www.to8to.com/riji/dongying">东营</a>
+                                        <a href="http://www.to8to.com/riji/dandong">丹东</a>
+                                        <a href="http://www.to8to.com/riji/danzhou">儋州</a>
+                                        <a href="http://www.to8to.com/riji/daxinganling">大兴安岭</a>
+                                        <a href="http://www.to8to.com/riji/datong">大同</a>
+                                        <a href="http://www.to8to.com/riji/dq">大庆</a>
+                                        <a href="http://www.to8to.com/riji/dali">大理</a>
+                                        <a href="http://www.to8to.com/riji/dl">大连</a>
+                                        <a href="http://www.to8to.com/riji/dingan">定安</a>
+                                        <a href="http://www.to8to.com/riji/dingxi">定西</a>
+                                        <a href="http://www.to8to.com/riji/dehong">德宏</a>
+                                        <a href="http://www.to8to.com/riji/dezhou">德州</a>
+                                        <a href="http://www.to8to.com/riji/deyang">德阳</a>
+                                        <a href="http://www.to8to.com/riji/dazhou">达州</a>
+                                        <a href="http://www.to8to.com/riji/diqing">迪庆</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">E</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/enshi">恩施</a>
+                                        <a href="http://www.to8to.com/riji/eerduosi">鄂尔多斯</a>
+                                        <a href="http://www.to8to.com/riji/ezhou">鄂州</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">F</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/fs">佛山</a>
+                                        <a href="http://www.to8to.com/riji/fuzhou">抚州</a>
+                                        <a href="http://www.to8to.com/riji/fushun">抚顺</a>
+                                        <a href="http://www.to8to.com/riji/fz">福州</a>
+                                        <a href="http://www.to8to.com/riji/fuxin">阜新</a>
+                                        <a href="http://www.to8to.com/riji/fuyang">阜阳</a>
+                                        <a href="http://www.to8to.com/riji/fcg">防城港</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">G</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/guyuan">固原</a>
+                                        <a href="http://www.to8to.com/riji/guangyuan">广元</a>
+                                        <a href="http://www.to8to.com/riji/guangan">广安</a>
+                                        <a href="http://www.to8to.com/riji/gz">广州</a>
+                                        <a href="http://www.to8to.com/riji/guoluo">果洛</a>
+                                        <a href="http://www.to8to.com/riji/guilin">桂林</a>
+                                        <a href="http://www.to8to.com/riji/gannan">甘南</a>
+                                        <a href="http://www.to8to.com/riji/ganzi">甘孜</a>
+                                        <a href="http://www.to8to.com/riji/guigang">贵港</a>
+                                        <a href="http://www.to8to.com/riji/gy">贵阳</a>
+                                        <a href="http://www.to8to.com/riji/ganzhou">赣州</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">H</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/hf">合肥</a>
+                                        <a href="http://www.to8to.com/riji/hulunbeiershi">呼伦贝尔</a>
+                                        <a href="http://www.to8to.com/riji/hhht">呼和浩特</a>
+                                        <a href="http://www.to8to.com/riji/hetian">和田</a>
+                                        <a href="http://www.to8to.com/riji/hami">哈密</a>
+                                        <a href="http://www.to8to.com/riji/heb">哈尔滨</a>
+                                        <a href="http://www.to8to.com/riji/huaihua">怀化</a>
+                                        <a href="http://www.to8to.com/riji/huizhou">惠州</a>
+                                        <a href="http://www.to8to.com/riji/hz">杭州</a>
+                                        <a href="http://www.to8to.com/riji/hanzhong">汉中</a>
+                                        <a href="http://www.to8to.com/riji/hechi">河池</a>
+                                        <a href="http://www.to8to.com/riji/heyuan">河源</a>
+                                        <a href="http://www.to8to.com/riji/haidongzhou">海东</a>
+                                        <a href="http://www.to8to.com/riji/haikou">海口</a>
+                                        <a href="http://www.to8to.com/riji/haixi">海西</a>
+                                        <a href="http://www.to8to.com/riji/huaibei">淮北</a>
+                                        <a href="http://www.to8to.com/riji/huainan">淮南</a>
+                                        <a href="http://www.to8to.com/riji/huaian">淮安</a>
+                                        <a href="http://www.to8to.com/riji/huzhou">湖州</a>
+                                        <a href="http://www.to8to.com/riji/honghe">红河</a>
+                                        <a href="http://www.to8to.com/riji/heze">菏泽</a>
+                                        <a href="http://www.to8to.com/riji/huludao">葫芦岛</a>
+                                        <a href="http://www.to8to.com/riji/hengshui">衡水</a>
+                                        <a href="http://www.to8to.com/riji/hengyang">衡阳</a>
+                                        <a href="http://www.to8to.com/riji/hezhou">贺州</a>
+                                        <a href="http://www.to8to.com/riji/handan">邯郸</a>
+                                        <a href="http://www.to8to.com/riji/hebi">鹤壁</a>
+                                        <a href="http://www.to8to.com/riji/hegang">鹤岗</a>
+                                        <a href="http://www.to8to.com/riji/huanggang">黄冈</a>
+                                        <a href="http://www.to8to.com/riji/huangnan">黄南</a>
+                                        <a href="http://www.to8to.com/riji/huangshan">黄山</a>
+                                        <a href="http://www.to8to.com/riji/huangshi">黄石</a>
+                                        <a href="http://www.to8to.com/riji/heihe">黑河</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">J</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/jiujiang">九江</a>
+                                        <a href="http://www.to8to.com/riji/jiamusi">佳木斯</a>
+                                        <a href="http://www.to8to.com/riji/jian">吉安</a>
+                                        <a href="http://www.to8to.com/riji/jilin">吉林</a>
+                                        <a href="http://www.to8to.com/riji/jx">嘉兴</a>
+                                        <a href="http://www.to8to.com/riji/jiayuguan">嘉峪关</a>
+                                        <a href="http://www.to8to.com/riji/jieyang">揭阳</a>
+                                        <a href="http://www.to8to.com/riji/jinzhong">晋中</a>
+                                        <a href="http://www.to8to.com/riji/jincheng">晋城</a>
+                                        <a href="http://www.to8to.com/riji/jingdezhen">景德镇</a>
+                                        <a href="http://www.to8to.com/riji/jiangmen">江门</a>
+                                        <a href="http://www.to8to.com/riji/jiangyin">江阴</a>
+                                        <a href="http://www.to8to.com/riji/jn">济南</a>
+                                        <a href="http://www.to8to.com/riji/jining">济宁</a>
+                                        <a href="http://www.to8to.com/riji/jz">焦作</a>
+                                        <a href="http://www.to8to.com/riji/jingzhou">荆州</a>
+                                        <a href="http://www.to8to.com/riji/jingmen">荆门</a>
+                                        <a href="http://www.to8to.com/riji/jiuquan">酒泉</a>
+                                        <a href="http://www.to8to.com/riji/jh">金华</a>
+                                        <a href="http://www.to8to.com/riji/jinchang">金昌</a>
+                                        <a href="http://www.to8to.com/riji/jinzhou">锦州</a>
+                                        <a href="http://www.to8to.com/riji/jixi">鸡西</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">K</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/kezilesu">克孜勒苏</a>
+                                        <a href="http://www.to8to.com/riji/kelamayi">克拉玛依</a>
+                                        <a href="http://www.to8to.com/riji/kaili">凯里</a>
+                                        <a href="http://www.to8to.com/riji/kashi">喀什</a>
+                                        <a href="http://www.to8to.com/riji/kaifeng">开封</a>
+                                        <a href="http://www.to8to.com/riji/kunshan">昆山</a>
+                                        <a href="http://www.to8to.com/riji/km">昆明</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">L</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/linxia">临夏</a>
+                                        <a href="http://www.to8to.com/riji/linfen">临汾</a>
+                                        <a href="http://www.to8to.com/riji/linyi">临沂</a>
+                                        <a href="http://www.to8to.com/riji/lincang">临沧</a>
+                                        <a href="http://www.to8to.com/riji/lingao">临高</a>
+                                        <a href="http://www.to8to.com/riji/lishui">丽水</a>
+                                        <a href="http://www.to8to.com/riji/lijiang">丽江</a>
+                                        <a href="http://www.to8to.com/riji/ledong">乐东</a>
+                                        <a href="http://www.to8to.com/riji/leshan">乐山</a>
+                                        <a href="http://www.to8to.com/riji/liuan">六安</a>
+                                        <a href="http://www.to8to.com/riji/liupanshui">六盘水</a>
+                                        <a href="http://www.to8to.com/riji/lanzhou">兰州</a>
+                                        <a href="http://www.to8to.com/riji/liangshan">凉山</a>
+                                        <a href="http://www.to8to.com/riji/lvliang">吕梁</a>
+                                        <a href="http://www.to8to.com/riji/loudi">娄底</a>
+                                        <a href="http://www.to8to.com/riji/lf">廊坊</a>
+                                        <a href="http://www.to8to.com/riji/lasa">拉萨</a>
+                                        <a href="http://www.to8to.com/riji/laibin">来宾</a>
+                                        <a href="http://www.to8to.com/riji/linzhi">林芝</a>
+                                        <a href="http://www.to8to.com/riji/lz">柳州</a>
+                                        <a href="http://www.to8to.com/riji/luzhou">泸州</a>
+                                        <a href="http://www.to8to.com/riji/ly">洛阳</a>
+                                        <a href="http://www.to8to.com/riji/luohe">漯河</a>
+                                        <a href="http://www.to8to.com/riji/liaocheng">聊城</a>
+                                        <a href="http://www.to8to.com/riji/laiwu">莱芜</a>
+                                        <a href="http://www.to8to.com/riji/liaoyuan">辽源</a>
+                                        <a href="http://www.to8to.com/riji/liaoyang">辽阳</a>
+                                        <a href="http://www.to8to.com/riji/lianyungang">连云港</a>
+                                        <a href="http://www.to8to.com/riji/longnan">陇南</a>
+                                        <a href="http://www.to8to.com/riji/lingshui">陵水</a>
+                                        <a href="http://www.to8to.com/riji/fzlc">黎川</a>
+                                        <a href="http://www.to8to.com/riji/longyan">龙岩</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">M</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/meizhou">梅州</a>
+                                        <a href="http://www.to8to.com/riji/mudanjiang">牡丹江</a>
+                                        <a href="http://www.to8to.com/riji/meishan">眉山</a>
+                                        <a href="http://www.to8to.com/riji/mianyang">绵阳</a>
+                                        <a href="http://www.to8to.com/riji/maoming">茂名</a>
+                                        <a href="http://www.to8to.com/riji/maanshan">马鞍山</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">N</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/neijiang">内江</a>
+                                        <a href="http://www.to8to.com/riji/nf">南丰</a>
+                                        <a href="http://www.to8to.com/riji/nj">南京</a>
+                                        <a href="http://www.to8to.com/riji/nanchong">南充</a>
+                                        <a href="http://www.to8to.com/riji/nn">南宁</a>
+                                        <a href="http://www.to8to.com/riji/nanping">南平</a>
+                                        <a href="http://www.to8to.com/riji/nc">南昌</a>
+                                        <a href="http://www.to8to.com/riji/nt">南通</a>
+                                        <a href="http://www.to8to.com/riji/ny">南阳</a>
+                                        <a href="http://www.to8to.com/riji/ningde">宁德</a>
+                                        <a href="http://www.to8to.com/riji/nb">宁波</a>
+                                        <a href="http://www.to8to.com/riji/nujiang">怒江</a>
+                                        <a href="http://www.to8to.com/riji/naqu">那曲</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">P</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/pl">平凉</a>
+                                        <a href="http://www.to8to.com/riji/pds">平顶山</a>
+                                        <a href="http://www.to8to.com/riji/panzhihua">攀枝花</a>
+                                        <a href="http://www.to8to.com/riji/puning">普宁</a>
+                                        <a href="http://www.to8to.com/riji/puer">普洱</a>
+                                        <a href="http://www.to8to.com/riji/puyang">濮阳</a>
+                                        <a href="http://www.to8to.com/riji/panjin">盘锦</a>
+                                        <a href="http://www.to8to.com/riji/putian">莆田</a>
+                                        <a href="http://www.to8to.com/riji/pingxiang">萍乡</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">Q</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/qitaihe">七台河</a>
+                                        <a href="http://www.to8to.com/riji/qingyang">庆阳</a>
+                                        <a href="http://www.to8to.com/riji/qujing">曲靖</a>
+                                        <a href="http://www.to8to.com/riji/qz">泉州</a>
+                                        <a href="http://www.to8to.com/riji/qingyuan">清远</a>
+                                        <a href="http://www.to8to.com/riji/qianjiang">潜江</a>
+                                        <a href="http://www.to8to.com/riji/qiongzhong">琼中</a>
+                                        <a href="http://www.to8to.com/riji/qionghai">琼海</a>
+                                        <a href="http://www.to8to.com/riji/qinhuangdao">秦皇岛</a>
+                                        <a href="http://www.to8to.com/riji/quzhou">衢州</a>
+                                        <a href="http://www.to8to.com/riji/qinzhou">钦州</a>
+                                        <a href="http://www.to8to.com/riji/qd">青岛</a>
+                                        <a href="http://www.to8to.com/riji/qqhe">齐齐哈尔</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">R</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/rikaze">日喀则</a>
+                                        <a href="http://www.to8to.com/riji/rizhao">日照</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">S</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/sanya">三亚</a>
+                                        <a href="http://www.to8to.com/riji/sanming">三明</a>
+                                        <a href="http://www.to8to.com/riji/sanmenxia">三门峡</a>
+                                        <a href="http://www.to8to.com/riji/sh">上海</a>
+                                        <a href="http://www.to8to.com/riji/shangrao">上饶</a>
+                                        <a href="http://www.to8to.com/riji/shiyan">十堰</a>
+                                        <a href="http://www.to8to.com/riji/shuangyashan">双鸭山</a>
+                                        <a href="http://www.to8to.com/riji/shangqiu">商丘</a>
+                                        <a href="http://www.to8to.com/riji/shangluo">商洛</a>
+                                        <a href="http://www.to8to.com/riji/siping">四平</a>
+                                        <a href="http://www.to8to.com/riji/suqian">宿迁</a>
+                                        <a href="http://www.to8to.com/riji/shannan">山南</a>
+                                        <a href="http://www.to8to.com/riji/shuozhou">朔州</a>
+                                        <a href="http://www.to8to.com/riji/songyuan">松原</a>
+                                        <a href="http://www.to8to.com/riji/shantou">汕头</a>
+                                        <a href="http://www.to8to.com/riji/shanwei">汕尾</a>
+                                        <a href="http://www.to8to.com/riji/sy">沈阳</a>
+                                        <a href="http://www.to8to.com/riji/sz">深圳</a>
+                                        <a href="http://www.to8to.com/riji/shizuishan">石嘴山</a>
+                                        <a href="http://www.to8to.com/riji/sjz">石家庄</a>
+                                        <a href="http://www.to8to.com/riji/shihezi">石河子</a>
+                                        <a href="http://www.to8to.com/riji/shaoxing">绍兴</a>
+                                        <a href="http://www.to8to.com/riji/suihua">绥化</a>
+                                        <a href="http://www.to8to.com/riji/suzhou">苏州</a>
+                                        <a href="http://www.to8to.com/riji/suining">遂宁</a>
+                                        <a href="http://www.to8to.com/riji/suizhou">随州</a>
+                                        <a href="http://www.to8to.com/riji/shaoguan">韶关</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">T</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/tz">台州</a>
+                                        <a href="http://www.to8to.com/riji/tulufan">吐鲁番</a>
+                                        <a href="http://www.to8to.com/riji/ts">唐山</a>
+                                        <a href="http://www.to8to.com/riji/tumushuke">图木舒克</a>
+                                        <a href="http://www.to8to.com/riji/tacheng">塔城</a>
+                                        <a href="http://www.to8to.com/riji/tianshui">天水</a>
+                                        <a href="http://www.to8to.com/riji/tj">天津</a>
+                                        <a href="http://www.to8to.com/riji/tianmen">天门</a>
+                                        <a href="http://www.to8to.com/riji/ty">太原</a>
+                                        <a href="http://www.to8to.com/riji/tunchang">屯昌</a>
+                                        <a href="http://www.to8to.com/riji/taian">泰安</a>
+                                        <a href="http://www.to8to.com/riji/taizhou">泰州</a>
+                                        <a href="http://www.to8to.com/riji/tonghua">通化</a>
+                                        <a href="http://www.to8to.com/riji/tongliao">通辽</a>
+                                        <a href="http://www.to8to.com/riji/tieling">铁岭</a>
+                                        <a href="http://www.to8to.com/riji/tongren">铜仁</a>
+                                        <a href="http://www.to8to.com/riji/tongchuan">铜川</a>
+                                        <a href="http://www.to8to.com/riji/tongling">铜陵</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">W</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/wanning">万宁</a>
+                                        <a href="http://www.to8to.com/riji/wlcb">乌兰察布</a>
+                                        <a href="http://www.to8to.com/riji/wuhai">乌海</a>
+                                        <a href="http://www.to8to.com/riji/wlmq">乌鲁木齐</a>
+                                        <a href="http://www.to8to.com/riji/wujiaqu">五家渠</a>
+                                        <a href="http://www.to8to.com/riji/wuzhishan">五指山</a>
+                                        <a href="http://www.to8to.com/riji/wuzhong">吴忠</a>
+                                        <a href="http://www.to8to.com/riji/weihai">威海</a>
+                                        <a href="http://www.to8to.com/riji/wenshan">文山</a>
+                                        <a href="http://www.to8to.com/riji/wenchang">文昌</a>
+                                        <a href="http://www.to8to.com/riji/wx">无锡</a>
+                                        <a href="http://www.to8to.com/riji/wuzhou">梧州</a>
+                                        <a href="http://www.to8to.com/riji/wuwei">武威</a>
+                                        <a href="http://www.to8to.com/riji/wh">武汉</a>
+                                        <a href="http://www.to8to.com/riji/wz">温州</a>
+                                        <a href="http://www.to8to.com/riji/weinan">渭南</a>
+                                        <a href="http://www.to8to.com/riji/wf">潍坊</a>
+                                        <a href="http://www.to8to.com/riji/wuhu">芜湖</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">X</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/xiantao">仙桃</a>
+                                        <a href="http://www.to8to.com/riji/xinyang">信阳</a>
+                                        <a href="http://www.to8to.com/riji/xinganmeng">兴安</a>
+                                        <a href="http://www.to8to.com/riji/xm">厦门</a>
+                                        <a href="http://www.to8to.com/riji/xianning">咸宁</a>
+                                        <a href="http://www.to8to.com/riji/xianyang">咸阳</a>
+                                        <a href="http://www.to8to.com/riji/xiaogan">孝感</a>
+                                        <a href="http://www.to8to.com/riji/xuancheng">宣城</a>
+                                        <a href="http://www.to8to.com/riji/xz">徐州</a>
+                                        <a href="http://www.to8to.com/riji/xinzhou">忻州</a>
+                                        <a href="http://www.to8to.com/riji/xinxiang">新乡</a>
+                                        <a href="http://www.to8to.com/riji/xinyu">新余</a>
+                                        <a href="http://www.to8to.com/riji/xiangtan">湘潭</a>
+                                        <a href="http://www.to8to.com/riji/xiangxi">湘西</a>
+                                        <a href="http://www.to8to.com/riji/xiangyang">襄阳</a>
+                                        <a href="http://www.to8to.com/riji/xishuangbanna">西双版纳</a>
+                                        <a href="http://www.to8to.com/riji/xining">西宁</a>
+                                        <a href="http://www.to8to.com/riji/xa">西安</a>
+                                        <a href="http://www.to8to.com/riji/xuchang">许昌</a>
+                                        <a href="http://www.to8to.com/riji/xingtai">邢台</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">Y</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/yw">义乌</a>
+                                        <a href="http://www.to8to.com/riji/yunfu">云浮</a>
+                                        <a href="http://www.to8to.com/riji/yc">伊春</a>
+                                        <a href="http://www.to8to.com/riji/yili">伊犁</a>
+                                        <a href="http://www.to8to.com/riji/yibin">宜宾</a>
+                                        <a href="http://www.to8to.com/riji/yichang">宜昌</a>
+                                        <a href="http://www.to8to.com/riji/yichun">宜春</a>
+                                        <a href="http://www.to8to.com/riji/yueyang">岳阳</a>
+                                        <a href="http://www.to8to.com/riji/yanan">延安</a>
+                                        <a href="http://www.to8to.com/riji/yanbian">延边</a>
+                                        <a href="http://www.to8to.com/riji/yulin">榆林</a>
+                                        <a href="http://www.to8to.com/riji/yongzhou">永州</a>
+                                        <a href="http://www.to8to.com/riji/yt">烟台</a>
+                                        <a href="http://www.to8to.com/riji/0775">玉林</a>
+                                        <a href="http://www.to8to.com/riji/yushu">玉树</a>
+                                        <a href="http://www.to8to.com/riji/yuxi">玉溪</a>
+                                        <a href="http://www.to8to.com/riji/yiyang">益阳</a>
+                                        <a href="http://www.to8to.com/riji/yancheng">盐城</a>
+                                        <a href="http://www.to8to.com/riji/yingkou">营口</a>
+                                        <a href="http://www.to8to.com/riji/yuncheng">运城</a>
+                                        <a href="http://www.to8to.com/riji/yinchuan">银川</a>
+                                        <a href="http://www.to8to.com/riji/yangjiang">阳江</a>
+                                        <a href="http://www.to8to.com/riji/yangquan">阳泉</a>
+                                        <a href="http://www.to8to.com/riji/yaan">雅安</a>
+                                        <a href="http://www.to8to.com/riji/yingtan">鹰潭</a>
+                                    </dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt style="display:inline-block;float:left;">Z</dt>
+                                    <dd class="cheng">
+                                        <a href="http://www.to8to.com/riji/zhongwei">中卫</a>
+                                        <a href="http://www.to8to.com/riji/zhongshan">中山</a>
+                                        <a href="http://www.to8to.com/riji/zhoukou">周口</a>
+                                        <a href="http://www.to8to.com/riji/zhangjiakou">张家口</a>
+                                        <a href="http://www.to8to.com/riji/zhangjiajie">张家界</a>
+                                        <a href="http://www.to8to.com/riji/zhangye">张掖</a>
+                                        <a href="http://www.to8to.com/riji/zhaotong">昭通</a>
+                                        <a href="http://www.to8to.com/riji/zaozhuang">枣庄</a>
+                                        <a href="http://www.to8to.com/riji/zhuzhou">株洲</a>
+                                        <a href="http://www.to8to.com/riji/zibo">淄博</a>
+                                        <a href="http://www.to8to.com/riji/zhanjiang">湛江</a>
+                                        <a href="http://www.to8to.com/riji/zhangzhou">漳州</a>
+                                        <a href="http://www.to8to.com/riji/zhuhai">珠海</a>
+                                        <a href="http://www.to8to.com/riji/zhaoqing">肇庆</a>
+                                        <a href="http://www.to8to.com/riji/zigong">自贡</a>
+                                        <a href="http://www.to8to.com/riji/zhoushan">舟山</a>
+                                        <a href="http://www.to8to.com/riji/ziyang">资阳</a>
+                                        <a href="http://www.to8to.com/riji/zunyi">遵义</a>
+                                        <a href="http://www.to8to.com/riji/zhaoyang">邵阳</a>
+                                        <a href="http://www.to8to.com/riji/zz">郑州</a>
+                                        <a href="http://www.to8to.com/riji/zhenjiang">镇江</a>
+                                        <a href="http://www.to8to.com/riji/zhumadian">驻马店</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </dd>
+                        <a href="javascript:void(0)" class="xgt_nav_showMore" onclick="javascript:showMore(this)"
+                           title="点击展开"></a><a href="javascript:void(0)" class="xgt_nav_showMore"
+                                               onclick="javascript:showMore(this)" title="点击展开"></a></dl>
+                </div>
+                <ul class="diary_detail_tab">
+                    <li class="on">
+                            <span><a href="http://www.to8to.com/riji/">推荐日记</a></span>
+                    </li>
+                    <li>
+                        <span><a href="http://www.to8to.com/riji/?order=last">最新日记</a></span>
+                    </li>
+                </ul>
+                <br>
+                <div class="diary_detail">
+                    <div class="diary_content diary_list">
+                        <div class="diary_items">
+                            <a target="_blank" rel="nofollow" class="diary_author"
+                               href="http://www.to8to.com/riji/4470562/">
+                                <img width="60" height="60" alt="罗皓元___"
+                                     src="img/headphoto_7929405.jpg">
+                                <span>罗皓元___</span>
+                            </a>
+                            <div class="diary_items_box">
+                                <ul class="tag_list" id="riji_4470562">
+                                    <li class="no_b"><span title="浏览数"><em class="ico_eye2"></em><span
+                                            class="list-fill-view">233217</span></span></li>
+                                    <li id="collect_scene">
+                                        <a title="收藏">
+                                            <em class="ico_star2 " value-id="4470562" value-sign="4470562"></em><font
+                                                class="list-fill-collect">205</font>
+                                        </a>
+                                    </li>
+                                    <li><a href="http://www.to8to.com/riji/scenecomment.php?sid=4470562" title="评论数"><em
+                                            class="ico_comment2"></em><span class="list-fill-comment">74</span></a></li>
+                                </ul>
+                                <a target="_blank" href="http://www.to8to.com/riji/4470562/"
+                                   class="diary_items_title"><span>115平第一套房，希望风格不要跑偏</span><em>[ 10篇 ]</em>
+                                </a>
+                                <div class="clearfix">
+                                    <div class="diary_items_tag">
+                                        <a href="http://www.to8to.com/riji/cs"><span class="tag_word"><em title="">长沙市</em></span></a>
+                                        <span class="tag_word">115㎡</span>
+                                        <span class="tag_word">简约</span>
+                                        <span class="tag_word">入住</span>
+                                    </div>
+                                    <div class="diary-items-msg">本文属于“<span class="diary-items-msg-inner">罗皓元___</span>”所有，转载请先联系
+                                    </div>
+                                </div>
+                                <div class="diary_items_textwrap">
+                                    <a target="_blank" href="http://www.to8to.com/riji/4470562/" rel="nofollow"
+                                       class="diary_items_text">一月份决定对买了近两年却一直丢空不装修的房子进行装修时，就开始恶补各类装修功课，终于，昨天请来的装修工作室开始对房间进行了初步测量，也与我进行了初步的沟通。慢慢地发现之前根据书本知识来对房子装修的各种...</a>
+                                </div>
+                                <ul class="diary_items_photo">
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/4470562/" rel="nofollow"><img
+                                            src="img/20180807_d40eec2a544dfbc1fbb36ugU8Vywxdrf_180x180M.jpg"
+                                            width="152" height="152" alt="">
+                                    </a><a class="total">共46张</a>
+                                    </li>
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/4470562/" rel="nofollow"><img
+                                            src="img/20180807_b9e696a9452399b82ea6nr4kwCXqFBEK_180x180M.jpg"
+                                            width="152" height="152" alt="">
+                                    </a></li>
+                                </ul>
+                                <span class="diary_items_time">
+    刚刚被回复 </span>
+                            </div>
+                        </div>
+                        <div class="diary_items">
+                            <a target="_blank" rel="nofollow" class="diary_author"
+                               href="http://www.to8to.com/riji/4637500/">
+                                <img width="60" height="60" alt="家有一宝_6675" src="img/482.jpg">
+                                <span>家有一宝_6675</span>
+                            </a>
+                            <div class="diary_items_box">
+                                <ul class="tag_list" id="riji_4637500">
+                                    <li class="no_b"><span title="浏览数"><em class="ico_eye2"></em><span
+                                            class="list-fill-view">139151</span></span></li>
+                                    <li id="collect_scene">
+                                        <a title="收藏">
+                                            <em class="ico_star2 " value-id="4637500" value-sign="4637500"></em><font
+                                                class="list-fill-collect">486</font>
+                                        </a>
+                                    </li>
+                                    <li><a href="http://www.to8to.com/riji/scenecomment.php?sid=4637500" title="评论数"><em
+                                            class="ico_comment2"></em><span class="list-fill-comment">413</span></a></li>
+                                </ul>
+                                <a target="_blank" href="http://www.to8to.com/riji/4637500/"
+                                   class="diary_items_title"><span>将墙面变成画布，让宝贝幸福成长</span><em>[ 14篇 ]</em>
+                                </a>
+                                <div class="clearfix">
+                                    <div class="diary_items_tag">
+                                        <a href="http://www.to8to.com/riji/gz"><span class="tag_word"><em title="">广州市</em></span></a>
+                                        <span class="tag_word">120㎡</span>
+                                        <span class="tag_word">简约</span>
+                                        <span class="tag_word">入住</span>
+                                    </div>
+                                    <div class="diary-items-msg">本文属于“<span class="diary-items-msg-inner">家有一宝_6675</span>”所有，转载请先联系
+                                    </div>
+                                </div>
+                                <div class="diary_items_textwrap">
+                                    <a target="_blank" href="http://www.to8to.com/riji/4637500/" rel="nofollow"
+                                       class="diary_items_text">房子是十年前结婚的时候装修的，但随着孩子慢慢长大，原先的从书房改过来的儿童房已经有点旧了，而且墙面也被孩子涂鸦的乱七八糟。现在大宝6岁，二宝3岁，大宝呢今年就要上学了，想要给孩子一个独立的空间和良好的...</a>
+                                </div>
+                                <ul class="diary_items_photo">
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/4637500/" rel="nofollow"><img
+                                            src="img/20180706_c340d0ecf06ed3b42028ncxisgrjemm6_180x180M.jpg"
+                                            width="152" height="152" alt="">
+                                    </a><a class="total">共39张</a>
+                                    </li>
+                                </ul>
+                                <span class="diary_items_time">
+    刚刚被回复 </span>
+                            </div>
+                        </div>
+                        <div class="diary_items">
+                            <a target="_blank" rel="nofollow" class="diary_author"
+                               href="http://www.to8to.com/riji/5120678/">
+                                <img width="60" height="60" alt="jiowse" src="img/15_1x.jpg">
+                                <span>jiowse</span>
+                            </a>
+                            <div class="diary_items_box">
+                                <ul class="tag_list" id="riji_5120678">
+                                    <li class="no_b"><span title="浏览数"><em class="ico_eye2"></em><span
+                                            class="list-fill-view">80910</span></span></li>
+                                    <li id="collect_scene">
+                                        <a title="收藏">
+                                            <em class="ico_star2 " value-id="5120678" value-sign="5120678"></em><font
+                                                class="list-fill-collect">78</font>
+                                        </a>
+                                    </li>
+                                    <li><a href="http://www.to8to.com/riji/scenecomment.php?sid=5120678" title="评论数"><em
+                                            class="ico_comment2"></em><span class="list-fill-comment">31</span></a></li>
+                                </ul>
+                                <a target="_blank" href="http://www.to8to.com/riji/5120678/"
+                                   class="diary_items_title"><span>野马之家装修日记</span><em>[ 11篇 ]</em>
+                                </a>
+                                <div class="clearfix">
+                                    <div class="diary_items_tag">
+                                        <a href="http://www.to8to.com/riji/zhongshan"><span class="tag_word"><em title="">中山市</em></span></a>
+                                        <span class="tag_word">110㎡</span>
+                                        <span class="tag_word">简约</span>
+                                        <span class="tag_word">竣工</span>
+                                    </div>
+                                    <div class="diary-items-msg">本文属于“<span class="diary-items-msg-inner">jiowse</span>”所有，转载请先联系
+                                    </div>
+                                </div>
+                                <div class="diary_items_textwrap">
+                                    <a target="_blank" href="http://www.to8to.com/riji/5120678/" rel="nofollow"
+                                       class="diary_items_text">各位网友好呀，我终于要开始装修自己的新房子啦！房子是2年前在家里那边买的，房价相对比较便宜，准备房子装修完可以住人我就回去建设家乡了。大城市好是好，但是拼搏起来太累人了，也许是不太适合我这种缺乏上进心...</a>
+                                </div>
+                                <ul class="diary_items_photo">
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/5120678/" rel="nofollow"><img
+                                            src="img/20180918_40762d7dd10923fbf758rya1j3kb4dyu_180x180M.png"
+                                            width="152" height="152" alt="">
+                                    </a><a class="total">共32张</a>
+                                    </li>
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/5120678/" rel="nofollow"><img
+                                            src="img/20181108_eaf2d4f80b95ed5953aeoVTodZiEhZMt_180x180M.jpg"
+                                            width="152" height="152" alt="">
+                                    </a></li>
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/5120678/" rel="nofollow"><img
+                                            src="img/20181108_2ceee94b3265c3866807CG2XWzu1m6wN_180x180M.jpg"
+                                            width="152" height="152" alt="">
+                                    </a></li>
+                                    <li><a target="_blank" href="http://www.to8to.com/riji/5120678/" rel="nofollow"><img
+                                            src="img/20181108_ce80086721c443d6d213SogBVydhl3me_180x180M.jpg"
+                                            width="152" height="152" alt="">
+                                    </a></li>
+                                </ul>
+                                <span class="diary_items_time">
+    1分钟前被回复 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages"><em>共有<b>280</b></em><strong>1</strong><a
+                        href="http://www.to8to.com/riji/list_2.html">2</a><a
+                        href="http://www.to8to.com/riji/list_3.html">3</a><a
+                        href="http://www.to8to.com/riji/list_4.html">4</a><a
+                        href="http://www.to8to.com/riji/list_5.html">5</a><i>...</i> <a
+                        href="http://www.to8to.com/riji/list_28.html" class="last">28</a><a
+                        href="http://www.to8to.com/riji/list_2.html" class="next" id="nextpageid">下一页<b></b></a></div>
+            </div>
+            <div class="side">
+                <a href="javascript:;" rel="nofollow" class="btn_diary" onclick="javascript:write_diary
+                (&#39;1_3_8_2&#39;)"><em
+                        class="zxgl_ico_write"></em>写装修日记</a>
+                <div class="hot_classify">
+                    <h3>热门分类</h3>
+                    <div class="hot_classify_bd">
+                        <ul>
+                            <li>
+                                <div class="classify_step classify_step1"><span class="step_dot"></span>
+                                    准 备</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow" >前期准备</a>
+                                    <a href="#" rel="nofollow" >交房验房</a>
+                                    <a href="#" rel="nofollow" >前期设计</a>
+                                    <a href="#" rel="nofollow">签装修保</a>
+                                    <a href="#" rel="nofollow">开工大吉</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>拆改</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">装修开工</a>
+                                    <a href="#" rel="nofollow">主体拆改</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>水电</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">水电改造</a>
+                                    <a href="#" rel="nofollow">水电验收</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>泥木</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">防水</a>
+                                    <a href="#" rel="nofollow">贴砖</a>
+                                    <a href="#" rel="nofollow">木工</a>
+                                    <a href="#" rel="nofollow">泥木验收</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>油漆</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">油漆验收</a>
+                                    <a href="#" rel="nofollow">墙面刷漆</a>
+                                    <a href="#" rel="nofollow">家具刷漆</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>竣工安装</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">橱柜安装</a>
+                                    <a href="#" rel="nofollow">门窗安装</a>
+                                    <a href="#" rel="nofollow">铺地板</a>
+                                    <a href="#" rel="nofollow">贴壁纸</a>
+                                    <a href="#" rel="nofollow">插座安装</a>
+                                    <a href="#" rel="nofollow">灯具安装</a>
+                                    <a href="#" rel="nofollow">五金安装</a>
+                                    <a href="#" rel="nofollow">洁具安装</a>
+                                    <a href="#" rel="nofollow">窗帘安装</a>
+                                    <a href="#" rel="nofollow">竣工验收</a>
+                                    <a href="#" rel="nofollow">厨卫吊顶</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>软装</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">拓荒保洁</a>
+                                    <a href="#" rel="nofollow">家具进场</a>
+                                    <a href="#" rel="nofollow">家电安装</a>
+                                    <a href="#" rel="nofollow">后期装饰</a>
+                                    <a href="#" rel="nofollow">甲醛检测</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>入住</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">毕业照</a>
+                                    <a href="#" rel="nofollow">经验总结</a>
+                                    <a href="#" rel="nofollow">乔迁新居</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="classify_step "><span class="step_dot"></span>其他</div>
+                                <div class="classify_lnk">
+                                    <a href="#" rel="nofollow">碎碎念</a>
+                                    <a href="#" rel="nofollow">产品选购</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--尾部-->
+    <script type="text/javascript">
+        document.write(footer.import.body.innerHTML);
+    </script>
+
+</body>
+</html>

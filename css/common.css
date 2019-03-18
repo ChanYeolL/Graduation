@@ -1,0 +1,369 @@
+@charset "utf-8";
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0
+}
+
+.footer_new_ga, a, a:active, a:hover {
+    text-decoration: none
+}
+
+html {
+    overflow-y: scroll;
+    overflow: hidden/9
+}
+
+.breadcrumb .breadcrumb-last, .ect {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+body {
+    background-color: #fff
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 "Source Han Sans SC", "HanHei SC", "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    color: #333
+}
+
+button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-size: 100%
+}
+
+a, button, input, select, textarea {
+    font-family: "Source Han Sans SC", "HanHei SC", "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    outline: 0
+}
+
+address, cite, dfn, em, var {
+    font-style: normal
+}
+
+dl, ol, ul {
+    list-style: none
+}
+
+a {
+    cursor: pointer;
+    color: #666
+}
+
+img {
+    border: 0
+}
+
+.footer_new_ga, .footer_new_ga span {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "\0020";
+    visibility: hidden;
+    height: 0
+}
+
+.global-wrap {
+    position: relative;
+    min-height: 100%;
+    clear: both
+}
+
+.ielt7 .global-wrap {
+    height: 100%
+}
+
+.content-wrapper {
+    width: 1220px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 1460px) {
+    .content-wrapper {
+        width: 1460px
+    }
+}
+
+.global-wrap .header {
+    width: 100%
+}
+
+iframe#clsIframe {
+    position: absolute
+}
+
+#popupContainer {
+    display: none
+}
+
+.global-bg {
+    background: url(//img.to8to.com/to8to_pc/common/statics/images/common_bg.png?v=201811291926) no-repeat
+}
+
+.common-icon {
+    background: url(//img.to8to.com/to8to_pc/common/statics/images/common_bg_s.png?v=20171024) no-repeat;
+    background-image: -webkit-image-set(url(//img.to8to.com/to8to_pc/common/statics/images/common_bg_s.png?v=20171024) 1x, url(//img.to8to.com/to8to_pc/common/statics/images/common_bg_l.png?v=20171024) 2x);
+    background-image: image-set(url(//img.to8to.com/to8to_pc/common/statics/images/common_bg_s.png?v=20171024) 1x, url(//img.to8to.com/to8to_pc/common/statics/images/common_bg_l.png?v=20171024) 2x)
+}
+
+.breadcrumb {
+    padding: 12px 0;
+    font-size: 12px
+}
+
+.breadcrumb li {
+    float: left;
+    margin-right: 8px;
+    height: 20px;
+    line-height: 20px
+}
+
+.breadcrumb .breadcrumb-pre a {
+    float: left;
+    color: #999
+}
+
+.breadcrumb .breadcrumb-list-parent {
+    float: left
+}
+
+.breadcrumb a .icon-breadcrumb {
+    position: relative;
+    float: left;
+    width: 8px;
+    height: 5px;
+    margin-top: 7px;
+    margin-left: 5px;
+    background-position: -152px -180px
+}
+
+.breadcrumb .breadcrumb-pre a:hover {
+    color: #f25618
+}
+
+.breadcrumb .breadcrumb-last {
+    width: 669px;
+    color: #333
+}
+
+.breadcrumb .breadcrumb-arrow {
+    float: left;
+    width: 5px;
+    height: 9px;
+    margin: 6px 0 0 7px;
+    background-position: -24px -672px
+}
+
+.breadcrumb-pre-list {
+    position: relative;
+    z-index: 11
+}
+
+.breadcrumb .breadcrumb-list {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    display: none;
+    min-width: 60px;
+    max-height: 200px;
+    padding: 5px 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #f5f5f5
+}
+
+.breadcrumb-list ul, .img-position {
+    overflow: hidden
+}
+
+.breadcrumb-list ul li {
+    margin: 0
+}
+
+.breadcrumb .breadcrumb-list a {
+    display: block;
+    float: none;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap
+}
+
+.pages {
+    padding-top: 35px;
+    margin-top: 0 !important;
+    text-align: center;
+    clear: both;
+    margin-bottom: 30px
+}
+
+.pages a, .pages em, .pages strong {
+    height: 32px;
+    padding: 0px 0px;
+    margin: 0 0 0 -1px !important;
+    line-height: 32px;
+    display: -moz-inline-box;
+    display: inline-block
+}
+
+.pages em {
+    margin-right: 20px;
+    display: none !important
+}
+
+.pages input {
+    vertical-align: bottom;
+    height: 18px;
+    width: 30px
+}
+
+.pages a {
+    width: 26px;
+    border: 1px solid #eee !important;
+    color: #999 !important;
+    background-color: #fff
+}
+
+.pages a:hover {
+    color: #01af63 !important
+}
+
+.pages i {
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    display: -moz-inline-box;
+    display: inline-block
+}
+
+.pages strong {
+    width: 28px;
+    height: 34px;
+    background-color: #01af63 !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    line-height: 34px;
+    border: 0 !important
+}
+
+.ielt8 .pages strong {
+    vertical-align: 1px
+}
+
+.pages .next, .pages .prev {
+    position: relative;
+    width: 79px
+}
+
+.pages .next b, .pages .prev b {
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    margin-top: 11px;
+    background: url(//img.to8to.com/to8to_img/global.png?v=20150812) no-repeat;
+    _background: url(//img.to8to.com/to8to_img/global.gif?v=20150812) no-repeat;
+    _overflow: hidden
+}
+
+.img-position-box.fix-width, .img-position-box.fix-width img {
+    width: 100%
+}
+
+.img-position-box.fix-height, .img-position-box.fix-height img {
+    height: 100%
+}
+
+.ielt8 .pages .next b, .ielt8 .pages .prev b {
+    top: 3px
+}
+
+.pages .prev b {
+    left: 15px;
+    float: left;
+    background-position: -173px 0
+}
+
+.pages .next b {
+    right: 15px;
+    float: right;
+    background-position: -180px 0
+}
+
+.pages .prev:hover b, .pages_s a.prev:hover {
+    background-position: -187px 0
+}
+
+.pages .next:hover b, .pages_s a.next:hover {
+    background-position: -194px 0
+}
+
+.img-position {
+    position: relative
+}
+
+.img-position-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0
+}
+
+.img-position-box img {
+    display: block;
+    position: absolute;
+    top: -50%;
+    left: -50%
+}
+
+.img-position-box img.img-hidden {
+    visibility: hidden;
+    position: static
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+a.footer_y_icp {
+    margin-left: 8px !important
+}
+
+.footer_new_ga {
+    display: inline-block
+}
+
+.footer_new_ga .index-icon6 {
+    width: 20px;
+    height: 20px;
+    background: url(//img.to8to.com/to8to_pc/common/statics/images/footer_110.png?v=20180201) center center no-repeat
+}
+
+.footer_new_ga span {
+    float: left;
+    margin: 0 0 0 5px;
+    color: #939393 !important
+}
+
+.footer-weixin-code {
+    margin-left: 0 !important
+}

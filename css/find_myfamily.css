@@ -575,7 +575,7 @@ margin-right: 10px;vertical-align:middle;}
 .free_booking div.fb_description em{color:#999; float:left; width:251px; display:inline; text-align:justify}
 .free_booking ul li .fb_check{ height:14px; color:#ff6666; width:200px; display:inline-block; margin:4px 0 0 60px;}
 .free_booking ul li .fb_check em{ width:13px; height:13px; margin:3px 3px 0 0 ; background-position:-51px -165px; float:left; }
-.window_box_container .apply_success, .window_box_container .apply_fail{float:left; width: 380px; height: 60px; margin:40px 0 0 60px; display: inline; position: relative; padding-bottom:;}
+.window_box_container .apply_success, .window_box_container .apply_fail{float:left; width: 380px; height: 60px; margin:40px 0 0 60px; display: inline; position: relative; }
 .apply_success span.as_true, .apply_fail span.as_fail{background:url(http://img.to8to.com/to8to_img/global.png) no-repeat;background-position: -322px -102px; width: 60px; height: 60px; float:left;}
 .apply_fail span.as_fail{background-position:-322px -163px;}
 .window_box_container .apply_success strong{position: absolute; font-size:24px; color: #333;font-family:"Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu; top:7px; left:81px; width: 300px; height: 26px; line-height: 26px; font-weight: 500}
